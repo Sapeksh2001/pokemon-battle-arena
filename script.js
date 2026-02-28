@@ -1251,10 +1251,23 @@ class MultiplayerManager {
         this.socket.on('game:started', (data) => {
             console.log('[MULTIPLAYER] Game started:', data);
             this.mode = 'playing';
+            
+            // Close the lobby modal
             this.arena.modals.close('multiplayerLobby');
+            
+            // Also remove 'visible' class directly as a safety fallback
+            const lobbyModal = document.getElementById('multiplayer-lobby-modal');
+            if (lobbyModal) lobbyModal.classList.remove('visible');
+            
+            // Apply the synced game state if provided
             if (data.gameState) {
                 this.receiveGameState(data.gameState);
             }
+            
+            // Notify players the battle has started
+            this.arena.log.add('🎮 Multiplayer game started! All players connected.', 'system');
+            this.arena.renderer.renderAll();
+            this.showNotification('Game started! Battle begins!', 'success');
         });
         
         this.socket.on('game:update', (data) => {
@@ -1338,8 +1351,8 @@ class MultiplayerManager {
             this.showNotification('Only the host can start the game', 'error');
             return;
         }
-        const gameState = this.arena.gs;
-        this.socket.emit('game:start', { gameState }, (response) => {
+        const serializedState = this.serializeGameState();
+        this.socket.emit('game:start', { gameState: serializedState }, (response) => {
             if (response.success) {
                 console.log('[MULTIPLAYER] Game starting...');
             } else {
