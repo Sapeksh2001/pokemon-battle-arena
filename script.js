@@ -1252,22 +1252,40 @@ class MultiplayerManager {
             console.log('[MULTIPLAYER] Game started:', data);
             this.mode = 'playing';
             
-            // Close the lobby modal
+            // Close ALL modals (lobby, create room, join room)
             this.arena.modals.close('multiplayerLobby');
-            
-            // Also remove 'visible' class directly as a safety fallback
             const lobbyModal = document.getElementById('multiplayer-lobby-modal');
             if (lobbyModal) lobbyModal.classList.remove('visible');
             
-            // Apply the synced game state if provided
-            if (data.gameState) {
-                this.receiveGameState(data.gameState);
-            }
+            // Also close the create/join room modals if still open
+            const roomModal = document.getElementById('room-modal');
+            if (roomModal) roomModal.classList.remove('visible');
+            const joinModal = document.getElementById('join-modal');
+            if (joinModal) joinModal.classList.remove('visible');
             
-            // Notify players the battle has started
-            this.arena.log.add('🎮 Multiplayer game started! All players connected.', 'system');
-            this.arena.renderer.renderAll();
-            this.showNotification('Game started! Battle begins!', 'success');
+            // === CRITICAL: Transition from lobby-view to arena-view ===
+            // This is the same transition that "Quick Battle" triggers via enterBattleArena()
+            const lobbyView = document.getElementById('lobby-view');
+            const arenaView = document.getElementById('arena-view');
+            const loadingScreen = document.getElementById('loading-screen');
+            
+            if (loadingScreen) loadingScreen.classList.remove('hidden');
+            
+            setTimeout(() => {
+                if (lobbyView) lobbyView.classList.add('hidden');
+                if (arenaView) arenaView.classList.remove('hidden');
+                if (loadingScreen) loadingScreen.classList.add('hidden');
+                
+                // Apply the synced game state if provided
+                if (data.gameState) {
+                    this.receiveGameState(data.gameState);
+                }
+                
+                // Notify players the battle has started
+                this.arena.log.add('🎮 Multiplayer game started! All players connected.', 'system');
+                this.arena.renderer.renderAll();
+                this.showNotification('Game started! Battle begins!', 'success');
+            }, 1500);
         });
         
         this.socket.on('game:update', (data) => {
