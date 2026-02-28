@@ -1,0 +1,12 @@
+node_modules/
+npm-debug.log*
+.env
+.DS_Store
+Thumbs.db
+
+# Test files
+test_*.js
+
+# IDE
+.vscode/
+.idea/
