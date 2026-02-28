@@ -1362,18 +1362,35 @@ class MultiplayerManager {
     }
     
     sendGameState() {
-        if (!this.roomCode || this.mode !== 'playing') return;
-        const gameState = this.serializeGameState();
-        this.socket.emit('game:sync', { gameState }, (response) => {
-            if (!response || !response.success) {
-                console.error('[MULTIPLAYER] Failed to sync game state');
-            }
-        });
+        console.log('[MULTIPLAYER] sendGameState called. roomCode:', this.roomCode, 'mode:', this.mode);
+        if (!this.roomCode || this.mode !== 'playing') {
+            console.log('[MULTIPLAYER] sendGameState SKIPPED (guard failed)');
+            return;
+        }
+        try {
+            const gameState = this.serializeGameState();
+            console.log('[MULTIPLAYER] Serialized state - players:', gameState.players?.length, 'round:', gameState.round);
+            this.socket.emit('game:sync', { gameState }, (response) => {
+                if (!response || !response.success) {
+                    console.error('[MULTIPLAYER] Failed to sync game state', response);
+                } else {
+                    console.log('[MULTIPLAYER] Game state synced successfully');
+                }
+            });
+        } catch (err) {
+            console.error('[MULTIPLAYER] Error serializing game state:', err);
+        }
     }
     
     receiveGameState(gameState) {
-        this.deserializeGameState(gameState);
-        this.arena.renderer.renderAll();
+        console.log('[MULTIPLAYER] receiveGameState called. Players:', gameState?.players?.length, 'Round:', gameState?.round);
+        try {
+            this.deserializeGameState(gameState);
+            this.arena.renderer.renderAll();
+            console.log('[MULTIPLAYER] Game state applied and rendered successfully');
+        } catch (err) {
+            console.error('[MULTIPLAYER] Error deserializing game state:', err);
+        }
     }
     
     sendAction(action, payload) {
@@ -2710,4 +2727,88 @@ function escapeHTML(str) {
 window.addEventListener('load', () => {
     const arena = new PokemonBattleArena();
     arena.init();
+    
+    // Auto-join from URL parameter: ?room=XXXXXX
+    const urlParams = new URLSearchParams(window.location.search);
+    const roomCode = urlParams.get('room');
+    if (roomCode && roomCode.length === 6) {
+        setTimeout(() => {
+            const name = prompt(`Join room ${roomCode}?\nEnter your trainer name:`);
+            if (name && name.trim()) {
+                if (arena.multiplayer) {
+                    arena.multiplayer.connect();
+                    setTimeout(() => {
+                        arena.multiplayer.joinRoom(roomCode, name.trim());
+                    }, 1000);
+                }
+            }
+            // Clean the URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }, 2000);
+    }
 });
+
+// ============================================
+// SHARE INVITE FUNCTIONS (global scope for onclick)
+// ============================================
+
+function copyRoomCode() {
+    const roomCode = document.getElementById('room-code-display')?.textContent?.trim();
+    if (!roomCode) return;
+    
+    navigator.clipboard.writeText(roomCode).then(() => {
+        const feedback = document.getElementById('copy-feedback');
+        if (feedback) {
+            feedback.textContent = '✅ Code copied!';
+            feedback.classList.remove('hidden');
+            setTimeout(() => feedback.classList.add('hidden'), 2000);
+        }
+        const btn = document.getElementById('copy-code-btn');
+        if (btn) {
+            btn.textContent = '✅ Copied!';
+            setTimeout(() => { btn.textContent = '📋 Copy Code'; }, 2000);
+        }
+    }).catch(() => {
+        const codeEl = document.getElementById('room-code-display');
+        if (codeEl) {
+            const range = document.createRange();
+            range.selectNode(codeEl);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+        }
+    });
+}
+
+function shareRoomLink() {
+    const roomCode = document.getElementById('room-code-display')?.textContent?.trim();
+    if (!roomCode) return;
+    
+    const joinUrl = `${window.location.origin}${window.location.pathname}?room=${roomCode}`;
+    const shareText = `Join my Pokémon Battle Arena! Room Code: ${roomCode}`;
+    
+    if (navigator.share) {
+        navigator.share({
+            title: 'Pokémon Battle Arena - Join My Room!',
+            text: shareText,
+            url: joinUrl
+        }).catch(() => copyToClipboardWithFeedback(joinUrl));
+    } else {
+        copyToClipboardWithFeedback(joinUrl);
+    }
+}
+
+function copyToClipboardWithFeedback(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        const feedback = document.getElementById('copy-feedback');
+        if (feedback) {
+            feedback.textContent = '🔗 Link copied to clipboard!';
+            feedback.classList.remove('hidden');
+            setTimeout(() => feedback.classList.add('hidden'), 3000);
+        }
+        const btn = document.getElementById('share-link-btn');
+        if (btn) {
+            btn.textContent = '✅ Link Copied!';
+            setTimeout(() => { btn.textContent = '🔗 Share Link'; }, 2000);
+        }
+    });
+}

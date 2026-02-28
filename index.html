@@ -660,7 +660,20 @@
                 <div class="room-code-section mb-6">
                     <h3 class="text-lg font-bold mb-2 text-center text-white">Room Code</h3>
                     <div id="room-code-display" class="room-code"></div>
-                    <p class="text-sm text-center text-slate-400">Share this code with friends to join</p>
+                    <p class="text-sm text-center text-slate-400 mb-3">Share this code with friends to join</p>
+                    
+                    <!-- Share Invite Buttons -->
+                    <div class="flex gap-3 justify-center flex-wrap">
+                        <button id="copy-code-btn" onclick="copyRoomCode()" 
+                                class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded border-2 border-black text-sm flex items-center gap-2 transition-all">
+                            📋 Copy Code
+                        </button>
+                        <button id="share-link-btn" onclick="shareRoomLink()" 
+                                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded border-2 border-black text-sm flex items-center gap-2 transition-all">
+                            🔗 Share Link
+                        </button>
+                    </div>
+                    <p id="copy-feedback" class="text-sm text-center text-green-400 mt-2 hidden">✅ Copied!</p>
                 </div>
                 
                 <!-- Players Section -->
