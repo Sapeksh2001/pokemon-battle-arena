@@ -336,6 +336,7 @@ class Pokemon {
             baseName: this.baseName,
             maxHp: this.maxHp,
             currentHP: this.currentHP,
+            stats: { ...this.stats },
             statModifiers: { ...this.statModifiers },
             statuses: { ...this.statuses }
         };
@@ -353,6 +354,8 @@ class Pokemon {
             return null;
         }
         const p = new Pokemon(result.foundNode, result.baseNode);
+        if (json.maxHp !== undefined) p.maxHp = json.maxHp;
+        if (json.stats) p.stats = { ...json.stats };
         p.currentHP = json.currentHP;
         p.statModifiers = { ...json.statModifiers };
         p.statuses = { ...json.statuses };
@@ -609,6 +612,12 @@ class BattleLog {
             ? entries.map(e => `<div class="log-entry-${e.type}">${e.message}</div>`).join('')
             : '<div class="text-slate-500">[SYSTEM] No actions yet...</div>';
         logDiv.scrollTop = logDiv.scrollHeight;
+    }
+
+    loadLogs(logs) {
+        this._buffer.clear();
+        logs.forEach(msg => this._buffer.push(msg));
+        this._render();
     }
 
     clear() {
@@ -1438,7 +1447,8 @@ class MultiplayerManager {
             weather: gs.weather,
             activeTurnPlayerId: gs.activeTurnPlayerId,
             selectedAttackTargetId: gs.selectedAttackTargetId,
-            selectedStatusTargetId: gs.selectedStatusTargetId
+            selectedStatusTargetId: gs.selectedStatusTargetId,
+            logs: this.arena.log._buffer.toArray()
         };
     }
 
@@ -1450,6 +1460,10 @@ class MultiplayerManager {
         gs.activeTurnPlayerId = state.activeTurnPlayerId;
         gs.selectedAttackTargetId = state.selectedAttackTargetId;
         gs.selectedStatusTargetId = state.selectedStatusTargetId;
+        
+        if (state.logs && state.logs.length > 0) {
+            this.arena.log.loadLogs(state.logs);
+        }
     }
 
     showRoomLobby() {
@@ -1651,6 +1665,11 @@ class PokemonBattleArena {
     }
 
     removePlayer(playerId) {
+        if (this.multiplayer && this.multiplayer.mode !== 'offline' && !this.multiplayer.isHost) {
+            this._notify('Only the host can remove players in multiplayer mode.', 'system', true);
+            return;
+        }
+
         const player = this.gs.players.find(p => p.id === playerId);
         if (!player) return;
 
