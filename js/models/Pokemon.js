@@ -1,0 +1,108 @@
+import { applyModification } from '../utils/helpers.js';
+
+// ==========================================
+// DOMAIN MODEL: POKÉMON
+// ==========================================
+
+export class Pokemon {
+    constructor(data, baseData) {
+        this.baseName = baseData.Name;
+        this.fullName = data.Name;
+        this.maxHp = data.stats.hp;
+        this.currentHP = data.stats.hp;
+        this.stats = { ...data.stats };
+        // Support both old ["Grass Poison"] and new ["Grass", "Poison"] formats
+        this.types = data.types.flatMap(t => t.split(' '));
+        this.sprite = data.sprite;
+        this.cry = data.cry;
+        this.tier = data.tier;
+        this.data = data;       // raw data for the current form
+        this.baseData = baseData;   // raw data for the base form (needed for form changes)
+        this.statModifiers = {};         // key → delta from base stat
+        this.statuses = {};         // e.g. { poison: true, burn: true }
+    }
+
+    // Computed properties
+    isFainted() { return this.currentHP <= 0; }
+    getHPPercent() { return this.currentHP / this.maxHp; }
+
+    /** Returns the effective value of a stat after applying in-battle modifiers. */
+    getEffectiveStat(statName) {
+        return this.stats[statName] + (this.statModifiers[statName] || 0);
+    }
+
+    // Mutations
+    takeDamage(amount) {
+        const before = this.currentHP;
+        this.currentHP = Math.max(0, this.currentHP - amount);
+        return before - this.currentHP;
+    }
+
+    heal(amount) {
+        const before = this.currentHP;
+        this.currentHP = Math.min(this.maxHp, this.currentHP + amount);
+        return this.currentHP - before;
+    }
+
+    modifyStat(statName, modType, value) {
+        if (statName === 'hp') {
+            const base = this.maxHp;
+            const current = this.currentHP;
+            const newHP = applyModification(current, base, modType, value, base);
+            this.currentHP = newHP;
+            return newHP - current; // positive = heal, negative = damage
+        }
+        const base = this.stats[statName];
+        const current = this.statModifiers[statName] || 0;
+
+        let newModifier;
+        if (modType === 'set') {
+            newModifier = value - base;
+        } else {
+            newModifier = applyModification(current, base, modType, value);
+        }
+
+        this.statModifiers[statName] = newModifier;
+        return newModifier - current;
+    }
+
+    applyStatus(status) { this.statuses[status] = true; }
+    removeStatus(status) { delete this.statuses[status]; }
+    hasStatus(status) { return !!this.statuses[status]; }
+
+    clearStatuses() {
+        this.statuses = {};
+        this.statModifiers = {};
+    }
+
+    // Serialisation for HistoryManager & Multiplayer State Sync
+    toJSON() {
+        return {
+            fullName: this.fullName,
+            baseName: this.baseName,
+            maxHp: this.maxHp,
+            currentHP: this.currentHP,
+            stats: { ...this.stats },
+            statModifiers: { ...this.statModifiers },
+            statuses: { ...this.statuses }
+        };
+    }
+
+    /**
+     * Restore a Pokemon instance from a serialised snapshot.
+     */
+    static fromJSON(json, db) {
+        const result = db.find(json.fullName);
+        if (!result) {
+            console.warn(`Pokemon.fromJSON: "${json.fullName}" not found in database.`);
+            return null;
+        }
+        const p = new Pokemon(result.foundNode, result.baseNode);
+        if (json.maxHp !== undefined) p.maxHp = json.maxHp;
+        if (json.stats) p.stats = { ...json.stats };
+        p.currentHP = json.currentHP;
+        p.statModifiers = { ...json.statModifiers };
+        p.statuses = { ...json.statuses };
+        return p;
+    }
+}
