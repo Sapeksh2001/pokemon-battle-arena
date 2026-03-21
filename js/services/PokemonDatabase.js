@@ -109,4 +109,16 @@ export class PokemonDatabase {
         const evos = result.foundNode.evolutions || [];
         return evos.map(evo => typeof evo === 'string' ? evo : evo.Name).filter(Boolean);
     }
+
+    /**
+     * Get the list of alternate form names for a given Pokémon name.
+     * @param {string} name 
+     * @returns {string[]} Array of form species names, or empty array
+     */
+    getForms(name) {
+        const result = this.find(name);
+        if (!result || !result.baseNode) return [];
+        const formsObj = result.baseNode.forms || {};
+        return Object.values(formsObj).map(f => f && f.Name).filter(Boolean);
+    }
 }

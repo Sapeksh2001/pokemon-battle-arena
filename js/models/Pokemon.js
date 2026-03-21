@@ -22,6 +22,9 @@ export class Pokemon {
         this.statuses = {};         // e.g. { poison: true, burn: true }
     }
 
+    get name() { return this.fullName; }
+    get baseSpecies() { return this.baseName; }
+
     // Computed properties
     isFainted() { return this.currentHP <= 0; }
     getHPPercent() { return this.currentHP / this.maxHp; }
@@ -73,6 +76,41 @@ export class Pokemon {
     clearStatuses() {
         this.statuses = {};
         this.statModifiers = {};
+    }
+
+    _updateFormOrEvolution(newData, newBaseData) {
+        if (!newData || !newBaseData) return false;
+        
+        const oldMaxHp = this.maxHp;
+        const newMaxHp = newData.stats.hp;
+        const diff = newMaxHp - oldMaxHp;
+        
+        this.baseName = newBaseData.Name;
+        this.fullName = newData.Name;
+        this.maxHp = newMaxHp;
+        this.currentHP = Math.min(newMaxHp, Math.max(1, this.currentHP + diff));
+        
+        this.stats = { ...newData.stats };
+        this.types = newData.types.flatMap(t => t.split(' '));
+        this.sprite = newData.sprite;
+        this.cry = newData.cry;
+        this.tier = newData.tier;
+        this.data = newData;
+        this.baseData = newBaseData;
+        
+        return true;
+    }
+
+    changeForm(newFormName, db) {
+        const result = db.find(newFormName);
+        if (!result) return false;
+        return this._updateFormOrEvolution(result.foundNode, result.baseNode);
+    }
+
+    evolve(newSpeciesName, db) {
+        const result = db.find(newSpeciesName);
+        if (!result) return false;
+        return this._updateFormOrEvolution(result.foundNode, result.baseNode);
     }
 
     // Serialisation for HistoryManager & Multiplayer State Sync
