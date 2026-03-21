@@ -374,7 +374,7 @@ export class PokemonBattleArena {
         const select = document.getElementById('edit-pokemon-select');
         const abilitySelect = document.getElementById('edit-ability-select');
         
-        const sortedNames = Object.keys(this.db._raw).sort();
+        const sortedNames = [...this.db.filteredNames].sort((a,b) => a.localeCompare(b));
         const frag = document.createDocumentFragment();
         sortedNames.forEach(name => {
             const opt = document.createElement('option');
