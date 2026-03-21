@@ -8,23 +8,24 @@ Since we migrated to Firebase, the Pokémon Battle Arena is now a **purely stati
 - A Firebase project (already configured in `js/api/socketClient.js`)
 - The Realtime Database initialized in **Test Mode** on the Firebase Console.
 
-## 1. Hosting on GitHub Pages (Recommended)
+## 1. Hosting on Firebase (Recommended)
 
-This is the easiest way to get a permanent, shareable link for free.
+Since your database is already on Firebase, this is the most professional option. It's completely **free** on the Spark plan.
 
-1. Push your latest code to GitHub:
-   ```bash
-   git add .
-   git commit -m "chore: Finalize Firebase migration"
-   git push origin main
-   ```
-2. Go to your repository on GitHub.
-3. Click on **Settings** > **Pages**.
-4. Under **Build and deployment** > **Branch**:
-   - Select **`main`**.
-   - Select **`/(root)`**.
-   - Click **Save**.
-5. Wait ~2 minutes. GitHub will provide a link like `https://sapeksh2001.github.io/pokemon-battle-arena/`.
+1.  Open your terminal in the project folder.
+2.  Log in to Firebase:
+    ```bash
+    npx firebase-tools login
+    ```
+3.  Deploy the game:
+    ```bash
+    npx firebase-tools deploy
+    ```
+4.  Firebase will provide a hosting URL like: `https://pokemon-1248.web.app`
+
+## 2. Hosting on GitHub Pages (Alternative)
+
+This is a great fallback if you don't want to use the Firebase CLI.
 
 ## 2. Hosting on Vercel
 
