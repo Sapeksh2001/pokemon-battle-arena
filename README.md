@@ -25,25 +25,23 @@ The stack is split into a static frontend (Vercel) and a WebSocket backend (Rend
 ```mermaid
 graph TD
     subgraph Frontend ["Pokémon Battle Arena"]
-        A[index.html<br/>UI Structure]
-        B[script.js<br/>Game Engine]
-        C[style.css<br/>Animations]
-        D[Pokemon_NewDataset.js<br/>Pokémon DB]
-        E[vercel.json<br/>Deploy Config]
+        A[index.html<br/>App Shell]
+        B[js/services/DataLoader.js<br/>Async Assets]
+        C[script.js<br/>Entry & Init]
+        D[js/main.js<br/>Game Orchestrator]
+        E[js/* Modules<br/>Game Domain]
     end
 
     subgraph Backend ["WebSocket Backend"]
         F[server.js<br/>Express + Socket.IO]
-        G[package.json<br/>Dependencies]
-        H[render.yaml<br/>Deploy Config]
     end
 
-    Frontend <-->|Socket.IO<br/>Multiplayer Integration| Backend
+    Frontend <-->|Socket.IO<br/>Multiplayer Sync| Backend
 ```
 
 ### Class Hierarchy
 
-Instead of scanning arrays every turn, the game uses a HashMap for O(1) Pokémon lookups and a Trie to search strings quickly. 
+The monolithic code has been refactored into a modular ES6 architecture. The game uses a HashMap for O(1) Pokémon lookups and a Trie to search strings quickly. 
 
 ```mermaid
 graph TD
@@ -140,14 +138,18 @@ I've included two basic test scripts to catch obvious regressions:
 
 If you are poking around the source, here is where everything lives:
 
-| File | Purpose | Size |
-|------|---------|------|
-| `script.js` | Core game logic and rendering | 3000+ lines |
-| `server.js` | Socket.IO room management | 500+ lines |
-| `style.css` | Animations, colors, layout layout | 700+ lines |
-| `Pokemon_NewDataset.js` | Detailed stats, forms, and tiers | 800+ lines |
-| `index.html` | Entry point, modals, lobby | 1000+ lines |
-| `multiplayer-integration.js`| Socket.IO client interface | 300+ lines |
+| Directory/File | Purpose |
+|------|---------|
+| `/js/models/` | Domain definitions (`Player.js`, `Pokemon.js`) |
+| `/js/services/` | Game engines (`BattleEngine.js`, `PokemonDatabase.js`, `DataLoader.js`, etc.) |
+| `/js/ui/` | UI and views (`UIRenderer.js`, `ModalManager.js`) |
+| `/js/api/` | Real-time networking wrapper (`socketClient.js`) |
+| `/js/utils/` | Data structures (`RingBuffer.js`, `Trie.js`) |
+| `script.js` | Core UI glue and orchestrator setup |
+| `js/main.js` | The `PokemonBattleArena` bootstrap class |
+| `server.js` | Socket.IO room management backend |
+| `style.css` | Animations, colors, retro pixel-art styling |
+| `index.html` | Entry point, loader, modals, lobby |
 
 ## Roadmap
 
