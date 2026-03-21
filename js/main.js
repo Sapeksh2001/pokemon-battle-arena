@@ -745,20 +745,20 @@ export class PokemonBattleArena {
     }
 
     _prepopulate() {
-        const teams = [
-            { name: 'Ash', mons: ['Pikachu', 'Charizard', 'Snorlax', 'Bulbasaur', 'Squirtle', 'Butterfree'] },
-            { name: 'Gary', mons: ['Blastoise', 'Umbreon', 'Arcanine', 'Nidoking', 'Scizor', 'Alakazam'] },
-            { name: 'Misty', mons: ['Starmie', 'Gyarados', 'Psyduck', 'Togepi', 'Corsola', 'Lapras'] },
-            { name: 'Brock', mons: ['Onix', 'Geodude', 'Vulpix', 'Crobat', 'Sudowoodo', 'Steelix'] },
-            { name: 'Cynthia', mons: ['Garchomp', 'Lucario', 'Milotic', 'Togekiss', 'Spiritomb', 'Roserade'] },
-            { name: 'Steven', mons: ['Metagross', 'Aggron', 'Skarmory', 'Claydol', 'Cradily', 'Armaldo'] }
-        ];
+        const names = ['Ash', 'Gary', 'Misty', 'Brock', 'Cynthia', 'Steven'];
+        const allMons = this.db.filteredNames;
+        
+        if (!allMons || allMons.length === 0) return;
 
-        teams.forEach((t, i) => {
-            const player = new Player(Date.now() + i, t.name);
-            t.mons.forEach((mon, j) => {
-                player.team[j] = this.db.createPokemonInstance(mon);
-            });
+        names.forEach((name, i) => {
+            const player = new Player(Date.now() + i, name);
+            
+            // Give each player 6 random Pokémon
+            for (let j = 0; j < 6; j++) {
+                const randomName = allMons[Math.floor(Math.random() * allMons.length)];
+                player.team[j] = this.db.createPokemonInstance(randomName);
+            }
+            
             player.activePokemonIndex = 0;
             this.gs.players.push(player);
         });
