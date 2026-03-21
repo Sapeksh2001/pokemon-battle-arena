@@ -7,7 +7,9 @@ A real-time multiplayer Pokémon battle simulator built with vanilla JavaScript 
 ![Status](https://img.shields.io/badge/status-production--ready-green) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 <div align="center">
-  <img src="./assets/hero.png" alt="Pokémon Battle Arena Gameplay" width="800">
+  <a href="https://pokemon-1248.web.app">
+    <img src="./assets/hero.png" alt="Pokémon Battle Arena Gameplay" width="800">
+  </a>
 </div>
 
 ## What it is
