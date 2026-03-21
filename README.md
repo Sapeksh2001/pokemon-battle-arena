@@ -1,11 +1,13 @@
 # Pokémon Battle Arena
 
-This is a real-time multiplayer Pokémon battle simulator built with vanilla JavaScript, Node.js, and WebSockets.
+A real-time multiplayer Pokémon battle simulator built with vanilla JavaScript and Firebase.
 
-![Status](https://img.shields.io/badge/status-production--ready-green) ![License](https://img.shields.io/badge/license-MIT-blue) ![Node Version](https://img.shields.io/badge/node-v18%2B-brightgreen)
+**Live Project:** [https://pokemon-1248.web.app](https://pokemon-1248.web.app)
+
+![Status](https://img.shields.io/badge/status-production--ready-green) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 <div align="center">
-  <img src="./assets/hero-placeholder.png" alt="Pokémon Battle Arena Gameplay" width="800">
+  <img src="https://pokemon-1248.web.app/assets/hero-placeholder.png" alt="Pokémon Battle Arena Gameplay" width="800">
 </div>
 
 ## What it is
@@ -34,9 +36,11 @@ graph TD
 
     subgraph Serverless Backend ["Firebase"]
         F[Realtime Database<br/>State Sync]
+        G[Firebase Hosting<br/>Static Assets]
     end
 
-    Frontend <-->|WebSockets<br/>Firebase SDK| Serverless Backend
+    Frontend <-->|Realtime Sync| F
+    G -->|Serve| Frontend
 ```
 
 ### Class Hierarchy
@@ -77,59 +81,44 @@ graph TD
     PokemonBattleArena --> Multiplayer
 ```
 
-## Setup
+## Local Development
 
-You'll need Node.js v18+ to run the local server.
+Since the game is serverless, you only need to serve the static files:
 
-1. Clone and install dependencies:
+1. Clone the repository:
 ```bash
 git clone https://github.com/Sapeksh2001/pokemon-battle-arena.git
 cd pokemon-battle-arena
-npm install
 ```
 
-2. Start the local server:
+2. Start a local server:
 ```bash
-npm start
+npx http-server -p 3000
 ```
 
-Load `http://localhost:3001` in your browser. If you want to test multiplayer locally, just open a second tab.
+Load `http://localhost:3000` in your browser. Multiplayer works out of the box using the configured Firebase project.
 
 ## Development Details
 
 The multiplayer architecture is powered by **Firebase Realtime Database**.
 - `createRoom()` defines a new JSON node at `/rooms/<roomId>` and writes the starting configuration.
-- `joinRoom()` adds the player to the active participants array within the room.
-- Realtime changes are pushed via the `onValue()` listener on the `/rooms/<roomId>/state` path, syncing the active turn, hit points, weather, and logs seamlessly directly between peer clients.
+- `joinRoom()` adds the player to the active participants within the room path.
+- Realtime changes are pushed via the `onValue()` and `onChildAdded()` listeners, syncing hit points, weather, and logs seamlessly directly between peer clients.
 
-Damage calculation is mostly faithful to the original games. It factors in attacker level, stat modifiers, Same Type Attack Bonus (STAB), type effectiveness multipliers, and a slight RNG variance.
-
-```javascript
-// Example Damage Calculation
-const effectiveness = typeChart[attackType][defendType];
-const baseDamage = (2 * attackerLevel / 5 + 2) * power * attackerStat / defenderStat / 50 + 2;
-const stab = attackerType == defendType ? 1.5 : 1;
-const variance = Math.random() * 0.15 + 0.85;
-
-const finalDamage = baseDamage * stab * effectiveness * variance;
-```
+Damage calculation is faithful to the original games. It factors in attacker level, stat modifiers, Same Type Attack Bonus (STAB), type effectiveness multipliers, and a slight RNG variance.
 
 ## Deployment
 
-Because the application is now purely static (serverless), deploying it takes about 2 minutes.
+Because the application is purely static, deploying it is trivial:
 
 1. Configure your Firebase project and paste your `firebaseConfig` object into `js/api/socketClient.js`.
-2. Push your code to GitHub.
-3. Deploy the repository to **Vercel** or **GitHub Pages**. No backend service setup is required.
-## Testing
-
-I've included two basic test scripts to catch obvious regressions:
-- `npm test` runs a Socket.IO integration test to ensure rooms can be created, joined, and torn down correctly.
-- `npm run test:e2e` spins up Playwright to navigate to the local lobby and verify the UI loads without throwing an exception.
+2. Deploy to **Firebase Hosting**:
+```bash
+npx firebase-tools login
+npx firebase-tools deploy
+```
 
 ## File Breakdown
-
-If you are poking around the source, here is where everything lives:
 
 | Directory/File | Purpose |
 |------|---------|
@@ -140,13 +129,11 @@ If you are poking around the source, here is where everything lives:
 | `/js/utils/` | Data structures (`RingBuffer.js`, `Trie.js`) |
 | `script.js` | Core UI glue and orchestrator setup |
 | `js/main.js` | The `PokemonBattleArena` bootstrap class |
-| `server.js` | Socket.IO room management backend |
 | `style.css` | Animations, colors, retro pixel-art styling |
 | `index.html` | Entry point, loader, modals, lobby |
 
 ## Roadmap
 
-A few things I might add later:
 - Competitive Ranked Mode (Elo/Glicko matchmaking).
 - Held items like Leftovers and Choice Band.
 - A basic Minimax AI so you can practice offline without juggling tabs.
@@ -154,4 +141,3 @@ A few things I might add later:
 ## License
 
 This project is open-source under the MIT License. Pokémon sprites and audio assets belong to Nintendo and Game Freak.
-
