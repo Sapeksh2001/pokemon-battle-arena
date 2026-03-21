@@ -1,17 +1,7 @@
 import { Player } from '../models/Player.js';
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import { getDatabase, ref, set, onValue, push, onDisconnect, remove, update, get, onChildAdded } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBJAsIW9w1Sa7NKO8tzODPOPFWKNPtr-yM",
-  authDomain: "pokemon-1248.firebaseapp.com",
-  projectId: "pokemon-1248",
-  storageBucket: "pokemon-1248.firebasestorage.app",
-  messagingSenderId: "185001376620",
-  appId: "1:185001376620:web:4358f1204a5fe1a7615149",
-  measurementId: "G-G07TP1ENV6",
-  databaseURL: "https://pokemon-1248-default-rtdb.firebaseio.com"
-};
+import { firebaseConfig } from './firebase-config.js';
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
