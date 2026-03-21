@@ -18,9 +18,9 @@ There's also an undo/redo system that lets you rewind turns during testing—I b
 
 ## Architecture
 
-The stack is split into a static frontend (Vercel) and a WebSocket backend (Render). I stuck to vanilla JS and Tailwind CSS for the client rather than reaching for React or Vue. 
+The stack is a pure static frontend that connects to a serverless **Firebase Realtime Database** for multiplayer synchronization. I stuck to vanilla JS and Tailwind CSS for the client rather than reaching for React or Vue. 
 
-### Frontend and Backend
+### Frontend and Firebase
 
 ```mermaid
 graph TD
@@ -32,11 +32,11 @@ graph TD
         E[js/* Modules<br/>Game Domain]
     end
 
-    subgraph Backend ["WebSocket Backend"]
-        F[server.js<br/>Express + Socket.IO]
+    subgraph Serverless Backend ["Firebase"]
+        F[Realtime Database<br/>State Sync]
     end
 
-    Frontend <-->|Socket.IO<br/>Multiplayer Sync| Backend
+    Frontend <-->|WebSockets<br/>Firebase SDK| Serverless Backend
 ```
 
 ### Class Hierarchy
@@ -69,7 +69,7 @@ graph TD
     end
 
     subgraph Multiplayer
-        MultiplayerManager[MultiplayerManager<br/>Socket.IO client]:::multi
+        MultiplayerManager[MultiplayerManager<br/>Firebase RTDB Client]:::multi
     end
 
     PokemonBattleArena --> Domain Models
@@ -79,7 +79,7 @@ graph TD
 
 ## Setup
 
-You'll need Node.js v18+ and npm.
+You'll need Node.js v18+ to run the local server.
 
 1. Clone and install dependencies:
 ```bash
@@ -88,24 +88,19 @@ cd pokemon-battle-arena
 npm install
 ```
 
-2. Start the backend:
+2. Start the local server:
 ```bash
 npm start
 ```
 
-3. Open a new terminal and start the frontend:
-```bash
-npx http-server -p 3000
-```
-
-Load `http://localhost:3000` in your browser. If you want to test multiplayer locally, just open a second tab.
+Load `http://localhost:3001` in your browser. If you want to test multiplayer locally, just open a second tab.
 
 ## Development Details
 
-The backend uses basic Socket.IO events. 
-- Clients emit `room:create` or `room:join`. 
-- The host emits `game:start`. 
-- Clients emit `game:action` to attack or switch, and the server broadcasts state updates back.
+The multiplayer architecture is powered by **Firebase Realtime Database**.
+- `createRoom()` defines a new JSON node at `/rooms/<roomId>` and writes the starting configuration.
+- `joinRoom()` adds the player to the active participants array within the room.
+- Realtime changes are pushed via the `onValue()` listener on the `/rooms/<roomId>/state` path, syncing the active turn, hit points, weather, and logs seamlessly directly between peer clients.
 
 Damage calculation is mostly faithful to the original games. It factors in attacker level, stat modifiers, Same Type Attack Bonus (STAB), type effectiveness multipliers, and a slight RNG variance.
 
@@ -121,13 +116,11 @@ const finalDamage = baseDamage * stab * effectiveness * variance;
 
 ## Deployment
 
-Deploying the hybrid stack takes about 10 minutes. 
+Because the application is now purely static (serverless), deploying it takes about 2 minutes.
 
-1. Push your code to GitHub.
-2. Go to Render, create a new Web Service, and select your repository. Set the Start Command to `npm start` and `NODE_ENV` to `production`.
-3. Go to Vercel, create a new project, and deploy the exact same repository.
-4. Update the `SOCKET_URL` variable in `multiplayer-integration.js` to point to your new Render URL, then commit and push.
-
+1. Configure your Firebase project and paste your `firebaseConfig` object into `js/api/socketClient.js`.
+2. Push your code to GitHub.
+3. Deploy the repository to **Vercel** or **GitHub Pages**. No backend service setup is required.
 ## Testing
 
 I've included two basic test scripts to catch obvious regressions:
