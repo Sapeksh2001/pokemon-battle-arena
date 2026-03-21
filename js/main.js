@@ -745,17 +745,23 @@ export class PokemonBattleArena {
     }
 
     _prepopulate() {
-        const p1 = new Player(Date.now() + 1, 'Ash');
-        p1.team[0] = this.db.createPokemonInstance('Pikachu');
-        p1.team[1] = this.db.createPokemonInstance('Charizard');
-        p1.activePokemonIndex = 0;
+        const teams = [
+            { name: 'Ash', mons: ['Pikachu', 'Charizard', 'Snorlax', 'Bulbasaur', 'Squirtle', 'Butterfree'] },
+            { name: 'Gary', mons: ['Blastoise', 'Umbreon', 'Arcanine', 'Nidoking', 'Scizor', 'Alakazam'] },
+            { name: 'Misty', mons: ['Starmie', 'Gyarados', 'Psyduck', 'Togepi', 'Corsola', 'Lapras'] },
+            { name: 'Brock', mons: ['Onix', 'Geodude', 'Vulpix', 'Crobat', 'Sudowoodo', 'Steelix'] },
+            { name: 'Cynthia', mons: ['Garchomp', 'Lucario', 'Milotic', 'Togekiss', 'Spiritomb', 'Roserade'] },
+            { name: 'Steven', mons: ['Metagross', 'Aggron', 'Skarmory', 'Claydol', 'Cradily', 'Armaldo'] }
+        ];
 
-        const p2 = new Player(Date.now() + 2, 'Gary');
-        p2.team[0] = this.db.createPokemonInstance('Blastoise');
-        p2.team[1] = this.db.createPokemonInstance('Umbreon');
-        p2.activePokemonIndex = 0;
-        
-        this.gs.players.push(p1, p2);
+        teams.forEach((t, i) => {
+            const player = new Player(Date.now() + i, t.name);
+            t.mons.forEach((mon, j) => {
+                player.team[j] = this.db.createPokemonInstance(mon);
+            });
+            player.activePokemonIndex = 0;
+            this.gs.players.push(player);
+        });
     }
 
     _populateMoveTypeSelector() {
