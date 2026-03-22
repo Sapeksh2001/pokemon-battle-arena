@@ -26,8 +26,16 @@ export class Pokemon {
     get baseSpecies() { return this.baseName; }
 
     // Computed properties
+    get spriteUrl() {
+        const nameForSprite = this.fullName.toLowerCase().replace(/[^a-z0-9]/g, '');
+        return `https://play.pokemonshowdown.com/sprites/gen5/${nameForSprite}.png`;
+    }
+
     isFainted() { return this.currentHP <= 0; }
-    getHPPercent() { return this.currentHP / this.maxHp; }
+    getHPPercent() {
+        if (!this.maxHp || this.maxHp <= 0) return 0;
+        return Math.max(0, Math.min(1, this.currentHP / this.maxHp));
+    }
 
     /** Returns the effective value of a stat after applying in-battle modifiers. */
     getEffectiveStat(statName) {
@@ -85,8 +93,10 @@ export class Pokemon {
         const newMaxHp = newData.stats.hp;
         const diff = newMaxHp - oldMaxHp;
         
-        this.baseName = newBaseData.Name;
-        this.fullName = newData.Name;
+        // Form nodes in the dataset use lowercase `name`; buildIndex normalises .Name = .name,
+        // but be defensive here in case the raw node is passed directly.
+        this.baseName = newBaseData.Name || newBaseData.name;
+        this.fullName = newData.Name || newData.name;
         this.maxHp = newMaxHp;
         this.currentHP = Math.min(newMaxHp, Math.max(1, this.currentHP + diff));
         
@@ -94,7 +104,7 @@ export class Pokemon {
         this.types = newData.types.flatMap(t => t.split(' '));
         this.sprite = newData.sprite;
         this.cry = newData.cry;
-        this.tier = newData.tier;
+        this.tier = newData.tier || newBaseData.tier;
         this.data = newData;
         this.baseData = newBaseData;
         

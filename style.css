@@ -2,8 +2,35 @@
  * POKÉMON BATTLE ARENA - STYLESHEET
  * This file defines the entire visual appearance of the application.
  * It uses a combination of custom CSS for the main battle arena and utility classes (from Tailwind) for modals.
- * The aesthetic is intentionally retro and pixelated.
+ * The aesthetic is intentionally retro and pixelated, enhanced with the Stitch "Indigo Plateau" design system.
  */
+
+/* --- STITCH DESIGN SYSTEM UTILITIES --- */
+/* CRT-style pixel grid texture for that retro monitor flavor */
+.pixel-grid {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 4px 4px;
+}
+/* Neon glow effect applied to primary yellow text */
+.text-glow {
+    text-shadow: 0 0 15px rgba(252, 223, 70, 0.5);
+}
+/* Hard pixel-offset shadows for the lobby buttons */
+.hard-shadow-tertiary {
+    box-shadow: 4px 4px 0px 0px #006a2d;
+}
+.hard-shadow-secondary {
+    box-shadow: 4px 4px 0px 0px #004da8;
+}
+.hard-shadow-outline {
+    box-shadow: 4px 4px 0px 0px #40485d;
+}
+/* Tactile press-down effect for interactive elements */
+.step-animation:active {
+    transform: scale(0.95);
+}
+
 /* --- CSS VARIABLES & GLOBAL STYLES --- */
 :root {
     /* Color variables for each Pokémon type, used for badges and other UI elements. */

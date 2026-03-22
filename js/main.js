@@ -9,7 +9,7 @@ import { BattleLog } from './services/BattleLog.js';
 import { HistoryManager } from './services/HistoryManager.js';
 import { ModalManager } from './ui/ModalManager.js';
 import { Timer } from './ui/Timer.js';
-import { UIRenderer } from './ui/UIRenderer.js';
+import { UIRenderer } from './ui/UIRenderer.js?v=5';
 import { MultiplayerManager } from './api/socketClient.js';
 
 export class PokemonBattleArena {
@@ -334,17 +334,18 @@ export class PokemonBattleArena {
         const player = this.gs.players.find(p => p.id === this.gs.currentEditing.playerId);
         for (let i = 0; i < 6; i++) {
             const slot = document.createElement('div');
-            slot.className = 'bg-slate-700 border-2 border-slate-500 rounded p-2 text-center cursor-pointer hover:bg-slate-600 transition-colors h-24 flex flex-col justify-center items-center relative';
+            slot.className = 'bg-surface-container-low border-2 border-outline-variant p-2 text-center cursor-pointer hover:bg-surface-variant transition-colors min-h-[140px] flex flex-col justify-center items-center relative step-animation';
             const mon = player.team[i];
             if (mon) {
-                slot.innerHTML = `<img src="${mon.spriteUrl}" alt="${mon.name}" class="h-12 w-12 object-contain filter drop-shadow-md pixelated"><div class="text-xs text-white font-bold mt-1 max-w-full overflow-hidden text-ellipsis px-1">${mon.fullName}</div><div class="text-[0.6rem] text-slate-300">Lv ${mon.level}</div>`;
+                const fallbackSprite = `https://play.pokemonshowdown.com/sprites/dex/${mon.fullName.toLowerCase().replace(/[^a-z0-9]/g, '')}.png`;
+                slot.innerHTML = `<img src="${mon.spriteUrl}" onerror="this.onerror=null; this.src='${fallbackSprite}';" alt="${mon.name}" class="h-[96px] w-[96px] object-contain object-bottom filter drop-shadow-md pixelated"><div class="text-xs uppercase text-white font-bold tracking-wider mt-1 max-w-full overflow-hidden text-ellipsis px-1">${mon.fullName}</div>`;
                 const removeBtn = document.createElement('button');
-                removeBtn.className = 'absolute top-0 right-0 bg-red-600 hover:bg-red-700 text-white w-5 h-5 flex items-center justify-center text-xs;';
+                removeBtn.className = 'absolute top-0 right-0 bg-[#b92902] hover:bg-[#ff7351] text-white w-5 h-5 flex items-center justify-center text-xs border-l border-b border-[#450900] step-animation';
                 removeBtn.innerHTML = '×';
                 removeBtn.onclick = (e) => { e.stopPropagation(); this._removePokemonSlot(i); };
                 slot.appendChild(removeBtn);
             } else {
-                slot.innerHTML = `<div class="text-slate-400 text-2xl font-bold">+</div><div class="text-[0.6rem] text-slate-400 mt-1 uppercase">Empty Slot</div>`;
+                slot.innerHTML = `<div class="text-secondary text-2xl font-bold">+</div><div class="text-[10px] text-secondary mt-1 uppercase tracking-widest">Empty Slot</div>`;
             }
             slot.onclick = () => this._openPokemonEditor(i);
             grid.appendChild(slot);
@@ -357,18 +358,17 @@ export class PokemonBattleArena {
         const existingMon = player.team[slotIndex];
         const form = document.getElementById('pokemon-editor-form');
         form.innerHTML = `
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-body">
                 <div>
-                    <label class="block text-sm text-slate-300 mb-1">Pokémon</label>
-                    <select id="edit-pokemon-select" class="w-full bg-slate-700 border border-slate-500 p-2 text-sm text-white focus:outline-none focus:border-yellow-400">
+                    <label class="block text-xs uppercase tracking-wider text-on-surface-variant mb-1">Pokémon</label>
+                    <select id="edit-pokemon-select" class="w-full bg-surface-container-lowest border border-outline-variant p-2 text-sm text-white focus:outline-none focus:border-yellow-400">
                         <option value="">-- Select Pokémon --</option></select>
                 </div>
-                <div><label class="block text-sm text-slate-300 mb-1">Level</label><input type="number" id="edit-level" class="w-full bg-slate-700 border border-slate-500 p-2 text-sm text-white input-no-spinner focus:outline-none focus:border-yellow-400" min="1" max="100" value="${existingMon ? existingMon.level : 100}"></div>
-                <div><label class="block text-sm text-slate-300 mt-2 mb-1">Ability</label><select id="edit-ability-select" class="w-full bg-slate-700 border border-slate-500 p-2 text-sm text-white focus:outline-none focus:border-yellow-400"><option value="">-- Base form default --</option></select></div>
+                <div><label class="block text-xs uppercase tracking-wider text-on-surface-variant mb-1">Ability</label><select id="edit-ability-select" class="w-full bg-surface-container-lowest border border-outline-variant p-2 text-sm text-white focus:outline-none focus:border-yellow-400"><option value="">-- Base form default --</option></select></div>
             </div>
             <div class="mt-4 flex gap-2 justify-end">
-                <button id="cancel-edit-btn" class="bg-gray-600 hover:bg-gray-700 px-4 py-2 border border-black text-sm">Cancel</button>
-                <button id="save-edit-btn" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 border border-black font-bold text-sm">Save to Slot</button>
+                <button id="cancel-edit-btn" class="bg-surface-variant hover:bg-surface-bright text-secondary px-4 py-2 border-2 border-secondary font-bold text-xs uppercase tracking-widest step-animation">CANCEL</button>
+                <button id="save-edit-btn" class="bg-secondary-container hover:bg-[#699cff] text-white px-4 py-2 border-2 border-[#003271] font-bold text-xs uppercase tracking-widest step-animation">SAVE TO SLOT</button>
             </div>`;
         
         const select = document.getElementById('edit-pokemon-select');
@@ -416,7 +416,7 @@ export class PokemonBattleArena {
         const select = document.getElementById('edit-pokemon-select');
         let pokemonName = select.value;
         
-        const level = parseInt(document.getElementById('edit-level').value) || 100;
+        const level = 100;
         const selectedAbility = document.getElementById('edit-ability-select').value;
         if (!pokemonName) { this._announce('Please select a Pokémon', true); return; }
 
@@ -485,23 +485,24 @@ export class PokemonBattleArena {
     }
 
     handleEvolve() {
-        const playerId = parseInt(document.getElementById('management-pokemon-select')?.value);
-        if (!playerId) return;
-        const player = this.gs.players.find(p => p.id === playerId);
-        const pokemon = player?.getActivePokemon();
-        if (!pokemon) return;
+        const sel = document.getElementById('management-pokemon-select');
+        if (!sel?.value) return;
+        const [pid, sid] = sel.value.split('-').map(Number);
+        const player = this.gs.players.find(p => p.id === pid);
+        const pokemon = player?.team[sid];
+        if (!pokemon || pokemon.isFainted()) return;
 
         const evos = this.db.getEvolutions(pokemon.name);
         if (!evos || evos.length === 0) { this._announce(`${pokemon.name} cannot evolve further.`, true); return; }
         
         if (evos.length === 1) {
-            this.openConfirmModal('Evolve', `Evolve ${pokemon.name} into ${evos[0]}?`, () => this._confirmEvolution(playerId, pokemon, evos[0]));
+            this.openConfirmModal('Evolve', `Evolve ${pokemon.name} into ${evos[0]}?`, () => this._confirmEvolution(player, pokemon, evos[0]));
         } else {
-            this._openEvolutionChoiceModal(playerId, pokemon, evos);
+            this._openEvolutionChoiceModal(player, pokemon, evos);
         }
     }
 
-    _openEvolutionChoiceModal(playerId, pokemon, evos) {
+    _openEvolutionChoiceModal(player, pokemon, evos) {
         document.getElementById('selection-modal-title').textContent = `Evolve ${pokemon.name}`;
         const grid = document.getElementById('selection-grid');
         grid.innerHTML = '';
@@ -509,16 +510,16 @@ export class PokemonBattleArena {
             const data = this.db.getPokemon(evoName);
             if (!data) return;
             const btn = document.createElement('div');
-            btn.className = 'bg-slate-700 hover:bg-slate-600 border-2 border-slate-500 rounded p-2 text-center cursor-pointer transition-colors';
-            btn.innerHTML = `<img src="https://play.pokemonshowdown.com/sprites/gen5/${evoName.toLowerCase().replace(/[^a-z0-9]/g, '')}.png" class="mx-auto h-16 w-16 object-contain" onerror="this.src='https://play.pokemonshowdown.com/sprites/gen5/substitute.png'"><div class="text-xs text-white font-bold mt-2">${evoName}</div>`;
-            btn.onclick = () => { this.modals.close('selection'); this._confirmEvolution(playerId, pokemon, evoName); };
+            btn.className = 'bg-surface-container-low hover:bg-surface-variant border-2 border-outline-variant p-2 text-center cursor-pointer transition-colors step-animation min-h-[100px] flex flex-col justify-center items-center';
+            btn.innerHTML = `<img src="https://play.pokemonshowdown.com/sprites/gen5/${evoName.toLowerCase().replace(/[^a-z0-9]/g, '')}.png" class="mx-auto h-16 w-16 object-contain pixelated" onerror="this.src='https://play.pokemonshowdown.com/sprites/gen5/substitute.png'"><div class="text-[10px] text-white font-bold mt-2 uppercase tracking-wider">${evoName}</div>`;
+            btn.onclick = () => { this.modals.close('selection'); this._confirmEvolution(player, pokemon, evoName); };
             grid.appendChild(btn);
         });
         document.getElementById('close-selection-modal').onclick = () => this.modals.close('selection');
         this.modals.open('selection');
     }
 
-    _confirmEvolution(playerId, oldPokemon, newSpeciesName) {
+    _confirmEvolution(player, oldPokemon, newSpeciesName) {
         this.history.snapshot(this.gs);
         if (oldPokemon.evolve(newSpeciesName, this.db)) {
             this.audio.play('evolve');
@@ -527,7 +528,7 @@ export class PokemonBattleArena {
                 this.audio.playCry(oldPokemon);
                 this._notify(`Congratulations! It evolved into ${newSpeciesName}!`, 'system');
                 this.renderer.renderAll();
-                this._playEntryAnimation(playerId);
+                this._playEntryAnimation(player.id ?? player);
                 if (this.multiplayer?.mode === 'playing') this.multiplayer.sendGameState();
             }, 1000);
         } else {
@@ -536,41 +537,37 @@ export class PokemonBattleArena {
     }
 
     openFormChangeModal() {
-        const playerId = parseInt(document.getElementById('management-pokemon-select')?.value);
-        if (!playerId) return;
-        const player = this.gs.players.find(p => p.id === playerId);
-        const pokemon = player?.getActivePokemon();
-        if (!pokemon) return;
+        const sel = document.getElementById('management-pokemon-select');
+        if (!sel?.value) return;
+        const [pid, sid] = sel.value.split('-').map(Number);
+        const player = this.gs.players.find(p => p.id === pid);
+        const pokemon = player?.team[sid];
+        if (!pokemon || pokemon.isFainted()) return;
 
         const forms = this.db.getForms(pokemon.baseSpecies);
-        if (!forms || forms.length === 0) { this._announce(`${pokemon.name} has no alternate forms.`, true); return; }
+        const otherForms = [pokemon.baseSpecies, ...forms].filter(f => f !== pokemon.fullName);
+        if (otherForms.length === 0) { this._announce(`${pokemon.name} has no alternate forms.`, true); return; }
 
         document.getElementById('selection-modal-title').textContent = `Change Form: ${pokemon.name}`;
         const grid = document.getElementById('selection-grid');
         grid.innerHTML = '';
         
-        if (pokemon.name !== pokemon.baseSpecies) {
-            this._populateSelectionGrid(grid, pokemon.baseSpecies, () => this._confirmFormChange(playerId, pokemon, pokemon.baseSpecies));
-        }
-        
-        forms.forEach(form => {
-            if (form !== pokemon.name) {
-                this._populateSelectionGrid(grid, form, () => this._confirmFormChange(playerId, pokemon, form));
-            }
+        otherForms.forEach(formName => {
+            this._populateSelectionGrid(grid, formName, () => this._confirmFormChange(player, pokemon, formName));
         });
         
         document.getElementById('close-selection-modal').onclick = () => this.modals.close('selection');
         this.modals.open('selection');
     }
 
-    _confirmFormChange(playerId, oldPokemon, newFormName) {
+    _confirmFormChange(player, oldPokemon, newFormName) {
         this.history.snapshot(this.gs);
         if (oldPokemon.changeForm(newFormName, this.db)) {
             this.audio.play('stat');
             this._notify(`${oldPokemon.baseSpecies} changed its form into ${newFormName}!`, 'system');
             this.audio.playCry(oldPokemon);
             this.renderer.renderAll();
-            this._playEntryAnimation(playerId);
+            this._playEntryAnimation(player.id ?? player);
             if (this.multiplayer?.mode === 'playing') this.multiplayer.sendGameState();
         } else {
             this._announce('Form change failed.', true);
@@ -581,17 +578,18 @@ export class PokemonBattleArena {
         const data = this.db.getPokemon(name);
         if (!data) return;
         const btn = document.createElement('div');
-        btn.className = 'bg-slate-700 hover:bg-slate-600 border-2 border-slate-500 rounded p-2 text-center cursor-pointer transition-colors';
-        btn.innerHTML = `<img src="https://play.pokemonshowdown.com/sprites/gen5/${name.toLowerCase().replace(/[^a-z0-9]/g, '')}.png" class="mx-auto h-16 w-16 object-contain" onerror="this.src='https://play.pokemonshowdown.com/sprites/gen5/substitute.png'"><div class="text-xs text-white font-bold mt-2">${name}</div>`;
+        btn.className = 'bg-surface-container-low hover:bg-surface-variant border-2 border-outline-variant p-2 text-center cursor-pointer transition-colors step-animation min-h-[100px] flex flex-col justify-center items-center';
+        btn.innerHTML = `<img src="https://play.pokemonshowdown.com/sprites/gen5/${name.toLowerCase().replace(/[^a-z0-9]/g, '')}.png" class="mx-auto h-16 w-16 object-contain pixelated" onerror="this.src='https://play.pokemonshowdown.com/sprites/gen5/substitute.png'"><div class="text-[10px] text-white font-bold mt-2 uppercase tracking-wider">${name}</div>`;
         btn.onclick = () => { this.modals.close('selection'); onClick(); };
         grid.appendChild(btn);
     }
 
     handleRevive() {
-        const playerId = parseInt(document.getElementById('management-pokemon-select')?.value);
-        if (!playerId) return;
-        const player = this.gs.players.find(p => p.id === playerId);
-        const pokemon = player?.getActivePokemon();
+        const sel = document.getElementById('management-pokemon-select');
+        if (!sel?.value) return;
+        const [pid, sid] = sel.value.split('-').map(Number);
+        const player = this.gs.players.find(p => p.id === pid);
+        const pokemon = player?.team[sid];
         if (!pokemon) return;
         if (!pokemon.isFainted()) { this._announce(`${pokemon.fullName} is not fainted!`, true); return; }
         this.history.snapshot(this.gs);
@@ -731,7 +729,7 @@ export class PokemonBattleArena {
         const text = document.getElementById('announcement-text');
         if (!banner || !text) return;
         text.textContent = message;
-        banner.className = `fixed top-4 left-1/2 transform -translate-x-1/2 border-2 px-6 py-3 z-50 text-white font-bold transition-all ${isError ? 'bg-red-800 border-red-400' : 'bg-slate-800 border-yellow-400'}`;
+        banner.className = `fixed top-4 left-1/2 transform -translate-x-1/2 border-2 px-6 py-3 z-50 text-white font-bold transition-all font-body tracking-wider uppercase text-sm ${isError ? 'bg-[#b92902] border-[#450900] hard-shadow-primary' : 'bg-surface-container-high border-yellow-400 hard-shadow-outline text-glow'}`;
         banner.classList.remove('hidden');
         banner.style.animation = 'none';
         void banner.offsetWidth; // reflow
@@ -863,6 +861,9 @@ export class PokemonBattleArena {
         document.getElementById('weather-btn')?.addEventListener('click', () => { this.audio.play('click'); this.cycleWeather(); });
         
         // Management
+        document.getElementById('management-pokemon-select')?.addEventListener('change', () => {
+            this.renderer._updateManagementButtons();
+        });
         document.getElementById('evolve-btn')?.addEventListener('click', () => { this.audio.play('click'); this.handleEvolve(); });
         document.getElementById('change-form-btn')?.addEventListener('click', () => { this.audio.play('click'); this.openFormChangeModal(); });
         document.getElementById('revive-btn')?.addEventListener('click', () => { this.handleRevive(); });

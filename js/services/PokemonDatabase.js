@@ -24,16 +24,20 @@ export class PokemonDatabase {
         if (!this._raw || Object.keys(this._raw).length === 0) return;
 
         const traverse = (node, baseNode) => {
-            if (!node || typeof node !== 'object' || !node.Name) return;
-            const key = node.Name.toLowerCase();
+            // Support both capitalized Name (base/evolution nodes) and lowercase name (form nodes)
+            const nodeName = node?.Name || node?.name;
+            if (!node || typeof node !== 'object' || !nodeName) return;
+            const key = nodeName.toLowerCase();
             if (!this._index.has(key)) {
+                // Normalise: ensure .Name is always set so rest of code can use .Name
+                if (!node.Name && node.name) node.Name = node.name;
                 this._index.set(key, { foundNode: node, baseNode });
-                this._trie.insert(node.Name);
+                this._trie.insert(nodeName);
             }
-            // Recurse into forms that have a Name.
+            // Recurse into forms (may use lowercase `name` in dataset)
             if (node.forms) {
                 for (const f of Object.values(node.forms)) {
-                    if (f && f.Name) traverse(f, node);
+                    if (f && (f.Name || f.name)) traverse(f, node);
                 }
             }
             // Recurse into evolutions.
@@ -119,6 +123,7 @@ export class PokemonDatabase {
         const result = this.find(name);
         if (!result || !result.baseNode) return [];
         const formsObj = result.baseNode.forms || {};
-        return Object.values(formsObj).map(f => f && f.Name).filter(Boolean);
+        // Dataset uses lowercase `name` for form entries; fall back to f.name if f.Name missing
+        return Object.values(formsObj).map(f => f && (f.Name || f.name)).filter(Boolean);
     }
 }

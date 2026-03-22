@@ -70,10 +70,10 @@ export class UIRenderer {
 
     _createEmptyCard() {
         const card = document.createElement('div');
-        card.className = 'player-card p-4 flex flex-col items-center justify-center h-full text-gray-500 border-dashed';
+        card.className = 'player-card p-4 flex flex-col items-center justify-center h-full text-secondary border-dashed border-2 border-outline-variant bg-surface-container-lowest/50';
         card.innerHTML = `<div class="text-center">
-            <i data-lucide="user-plus" class="w-16 h-16 mx-auto"></i>
-            <p class="mt-2">EMPTY SLOT</p>
+            <span class="material-symbols-outlined text-6xl mx-auto opacity-50">person_add</span>
+            <p class="mt-2 text-xs uppercase tracking-widest font-bold">EMPTY SLOT</p>
         </div>`;
         return card;
     }
@@ -91,11 +91,11 @@ export class UIRenderer {
         const pokemon = player.getActivePokemon();
         if (!pokemon) {
             card.innerHTML = `
-                <div class="flex flex-col items-center justify-center h-full text-center">
-                    <h3 class="font-bold text-2xl text-gray-400">${escapeHTML(player.name)}</h3>
-                    <p class="text-sm text-gray-500 mt-4">No active Pokémon.</p>
+                <div class="flex flex-col items-center justify-center h-full text-center font-body">
+                    <h3 class="font-bold text-2xl text-secondary font-headline">${escapeHTML(player.name)}</h3>
+                    <p class="text-xs uppercase tracking-wider text-on-surface-variant mt-4">No active Pokémon.</p>
                     <button onclick="window.openTeamManager(${player.id})"
-                            class="w-full mt-4 bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 text-xs">
+                            class="w-full mt-4 bg-secondary-container hover:bg-[#699cff] text-white font-bold py-3 px-4 text-xs uppercase tracking-widest border border-[#003271] step-animation">
                         Manage Team
                     </button>
                 </div>`;
@@ -119,19 +119,19 @@ export class UIRenderer {
         card.innerHTML = `
             <div class="entry-animation-container"></div>
             ${player.id === this._gs.activeTurnPlayerId
-                ? '<div class="turn-indicator-arrow"><i data-lucide="chevrons-down" class="w-8 h-8"></i></div>'
+                ? '<div class="turn-indicator-arrow"><span class="material-symbols-outlined text-3xl">keyboard_double_arrow_down</span></div>'
                 : ''}
             <div class="w-full flex-shrink-0">
                 <div class="w-full flex justify-between items-start gap-2 min-w-0">
                     <h2 class="font-bold card-trainer-name" title="${escapeHTML(player.name)}">${escapeHTML(player.name)}</h2>
                     <div class="flex gap-2">
                         <button onclick="window.removePlayer(${player.id})"
-                                class="text-red-400 hover:text-red-300 transition-colors" title="Remove Player">
-                            <i data-lucide="user-x" class="w-4 h-4"></i>
+                                class="text-[#ff7351] hover:text-white transition-colors" title="Remove Player">
+                            <span class="material-symbols-outlined text-[18px]">person_remove</span>
                         </button>
                         <button onclick="window.openTeamManager(${player.id})"
-                                class="text-slate-400 hover:text-white transition-colors" title="Manage Team">
-                            <i data-lucide="settings-2" class="w-5 h-5"></i>
+                                class="text-secondary hover:text-white transition-colors" title="Manage Team">
+                            <span class="material-symbols-outlined text-[20px]">settings</span>
                         </button>
                     </div>
                 </div>
@@ -188,13 +188,13 @@ export class UIRenderer {
         const iconMap = {
             poison: { icon: 'skull', color: 'text-purple-400' },
             bad_poison: { icon: 'skull', color: 'text-purple-400' },
-            burn: { icon: 'flame', color: 'text-orange-400' },
-            paralyze: { icon: 'zap', color: 'text-yellow-400' },
-            curse: { icon: 'ghost', color: 'text-indigo-400' },
+            burn: { icon: 'local_fire_department', color: 'text-orange-400' },
+            paralyze: { icon: 'bolt', color: 'text-yellow-400' },
+            curse: { icon: 'cruelty', color: 'text-indigo-400' },
         };
         return Object.keys(pokemon.statuses)
             .filter(s => iconMap[s])
-            .map(s => `<i data-lucide="${iconMap[s].icon}" class="w-5 h-5 ${iconMap[s].color}"></i>`)
+            .map(s => `<span class="material-symbols-outlined text-[20px] ${iconMap[s].color}" style="font-variation-settings: 'FILL' 1;">${iconMap[s].icon}</span>`)
             .join('');
     }
 
@@ -202,11 +202,11 @@ export class UIRenderer {
     _renderStatHeaders(pokemon) {
         const isParalyzed = pokemon.hasStatus('paralyze');
         return [
-            `<div class="flex justify-center items-center" title="Attack"><i data-lucide="sword"></i></div>`,
-            `<div class="flex justify-center items-center" title="Defense"><i data-lucide="shield"></i></div>`,
-            `<div class="flex justify-center items-center" title="Special Attack"><i data-lucide="swords"></i></div>`,
-            `<div class="flex justify-center items-center" title="Special Defense"><i data-lucide="shield-check"></i></div>`,
-            `<div class="flex justify-center items-center ${isParalyzed ? 'stat-paralyzed' : ''}" title="Speed"><i data-lucide="zap"></i></div>`,
+            `<div class="flex justify-center items-center" title="Attack"><span class="material-symbols-outlined text-[22px]">swords</span></div>`,
+            `<div class="flex justify-center items-center" title="Defense"><span class="material-symbols-outlined text-[22px]">shield</span></div>`,
+            `<div class="flex justify-center items-center" title="Special Attack"><span class="material-symbols-outlined text-[22px]">local_fire_department</span></div>`,
+            `<div class="flex justify-center items-center" title="Special Defense"><span class="material-symbols-outlined text-[22px]">health_and_safety</span></div>`,
+            `<div class="flex justify-center items-center ${isParalyzed ? 'stat-paralyzed' : ''}" title="Speed"><span class="material-symbols-outlined text-[22px]">bolt</span></div>`,
         ].join('');
     }
 
@@ -235,9 +235,9 @@ export class UIRenderer {
                 : (isFainted
                     ? 'https://img.pokemondb.net/sprites/items/luxury-ball.png'
                     : 'https://img.pokemondb.net/sprites/items/poke-ball.png');
-            const border = isActive ? 'border-2 border-yellow-400' : 'border-2 border-slate-600';
+            const border = isActive ? 'border-2 border-yellow-400' : 'border-2 border-outline-variant';
             return `<img src="${src}" title="${p ? escapeHTML(p.fullName) : 'Empty'}"
-                         class="w-12 h-12 team-pokeball bg-slate-800 p-1 ${border} ${isFainted ? 'grayscale' : ''}"
+                         class="w-16 h-16 team-pokeball bg-surface-container-low p-1 ${border} ${isFainted ? 'grayscale' : ''}"
                          onclick="window.handleTeamIconClick(${player.id}, ${i})">`;
         }).join('');
     }
@@ -311,12 +311,12 @@ export class UIRenderer {
             const shortNames = { none: 'Wth: None', sun: 'Wth: Sun', rain: 'Wth: Rain', sandstorm: 'Wth: Sand', hail: 'Wth: Hail' };
             btn.textContent = shortNames[w] || 'Wth';
 
-            btn.className = 'p-1 border border-black text-xs font-bold transition-colors shadow-inner ' +
-                (w === 'none' ? 'bg-slate-600 hover:bg-slate-700 text-white' :
-                    w === 'sun' ? 'bg-yellow-500 hover:bg-yellow-600 text-black' :
-                        w === 'rain' ? 'bg-blue-500 hover:bg-blue-600 text-white' :
-                            w === 'sandstorm' ? 'bg-amber-600 hover:bg-amber-700 text-white' :
-                                'bg-cyan-200 hover:bg-cyan-300 text-black');
+            btn.className = 'p-1 border border-outline-variant text-xs uppercase font-bold tracking-widest transition-colors step-animation ' +
+                (w === 'none' ? 'bg-surface-variant hover:bg-surface-bright text-secondary' :
+                    w === 'sun' ? 'bg-yellow-400 hover:bg-yellow-300 text-black' :
+                        w === 'rain' ? 'bg-[#699cff] hover:bg-[#8bb3ff] text-white' :
+                            w === 'sandstorm' ? 'bg-[#ca8a04] hover:bg-[#a16207] text-white' :
+                                'bg-[#00e5ff] hover:bg-[#00b8d4] text-black');
         }
     }
 
@@ -352,8 +352,13 @@ export class UIRenderer {
         if (!pokemon.isFainted()) {
             evolveBtn.disabled = !(pokemon.data?.evolutions?.some(e => e?.Name));
             const base = pokemon.baseData || pokemon.data;
+            // Form entries in the dataset use lowercase `name` (not `Name`).
+            // Check both to correctly detect forms like Diglett-Alola, Meowth-Alola, etc.
             const otherForms = [base, ...Object.values(base.forms || {})]
-                .filter(f => f?.Name && f.Name !== pokemon.fullName);
+                .filter(f => {
+                    const fname = f?.Name || f?.name;
+                    return fname && fname !== pokemon.fullName;
+                });
             formBtn.disabled = otherForms.length === 0;
         }
     }
