@@ -1,145 +1,142 @@
 # Pokémon Battle Arena
 
-A real-time multiplayer Pokémon battle simulator built with vanilla JavaScript and Firebase.
+A real-time multiplayer Pokémon battle simulator built with vanilla JavaScript and Firebase. It allows trainers to build teams, join rooms with simple 6-digit codes, and battle friends in a faithful recreation of the core combat mechanics.
 
-**Live Project:** [https://pokemon-1248.web.app](https://pokemon-1248.web.app)
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
 
-![Status](https://img.shields.io/badge/status-production--ready-green) ![License](https://img.shields.io/badge/license-MIT-blue)
+---
 
-<div align="center">
-  <a href="https://pokemon-1248.web.app">
-    <img src="./assets/hero.png" alt="Pokémon Battle Arena Gameplay" width="800">
-  </a>
-</div>
+## Features
+- Real-time multiplayer synchronization via Firebase
+- Full core combat mechanics: type effectiveness, stat modifiers, STAB, critical hits, and RNG variance
+- Status conditions (burn, paralysis, poison) and weather effects (sandstorm, hail, etc.)
+- In-battle form changes (e.g., Alolan forms, Megas) and mid-battle evolution
+- Custom undo/redo system powered by a RingBuffer
+- Authentic retro pixel-art aesthetic and UI with custom CSS
+- Tone.js-powered original sound effects and Pokémon cries
 
-## What it is
+---
 
-You can build a team of six Pokémon, join a room using a simple 6-digit code, and battle your friends in real-time.
+## Tech Stack
+- **Frontend**: Vanilla HTML / JS / CSS (Tailwind used for some utility but largely custom CSS for retro feel)
+- **Backend**: Serverless (Firebase Realtime Database)
+- **Database**: Firebase Realtime Database
+- **Hosting**: Firebase Hosting
 
-The battle engine handles the core mechanics you'd expect from the actual games: type effectiveness, stat modifiers, status conditions (burn, paralysis, poison), and weather effects like sandstorms and hail. Up to six players can connect to the same room. I built the UI using a retro pixel-art style, complete with original sound effects powered by Tone.js.
+See [TECH_STACK.md](./TECH_STACK.md) for complete dependency list.
 
-There's also an undo/redo system that lets you rewind turns during testing—I built this using a custom RingBuffer so it doesn't leak memory if a battle goes on forever.
+---
 
-## Architecture
+## Project Structure
 
-The stack is a pure static frontend that connects to a serverless **Firebase Realtime Database** for multiplayer synchronization. I stuck to vanilla JS and Tailwind CSS for the client rather than reaching for React or Vue. 
-
-### Frontend and Firebase
-
-```mermaid
-graph TD
-    subgraph Frontend ["Pokémon Battle Arena"]
-        A[index.html<br/>App Shell]
-        B[js/services/DataLoader.js<br/>Async Assets]
-        C[script.js<br/>Entry & Init]
-        D[js/main.js<br/>Game Orchestrator]
-        E[js/* Modules<br/>Game Domain]
-    end
-
-    subgraph Serverless Backend ["Firebase"]
-        F[Realtime Database<br/>State Sync]
-        G[Firebase Hosting<br/>Static Assets]
-    end
-
-    Frontend <-->|Realtime Sync| F
-    G -->|Serve| Frontend
+```text
+pokemon-battle-arena/
+├── assets/               # Images, hero banners, icons
+├── js/                   # Main application code
+│   ├── api/              # Real-time networking wrapper (socketClient.js)
+│   ├── models/           # Domain definitions (Player.js, Pokemon.js)
+│   ├── services/         # Game engines (BattleEngine.js, PokemonDatabase.js, DataLoader.js, etc.)
+│   ├── ui/               # UI orchestration (UIRenderer.js, ModalManager.js)
+│   └── utils/            # Data structures and helpers (RingBuffer.js, Trie.js, etc.)
+├── .env.example          # Environment variable template
+├── index.html            # Entry point, loader, modals, lobby
+├── Pokemon_NewDataset.js # Core Pokémon statistics and moves dataset
+├── script.js             # Core UI glue and orchestrator setup
+├── style.css             # Animations, colors, retro pixel-art styling
+├── README.md             # This file
+├── PRD.md                # Product Requirements Document
+├── APP_FLOW.md           # Application flow and navigation
+├── TECH_STACK.md         # Technology stack and versions
+├── FRONTEND_GUIDELINES.md # Design system and component library
+├── BACKEND_STRUCTURE.md  # Database schema and API contracts
+└── IMPLEMENTATION_PLAN.md # Step-by-step build sequence
 ```
 
-### Class Hierarchy
+---
 
-The monolithic code has been refactored into a modular ES6 architecture. The game uses a HashMap for O(1) Pokémon lookups and a Trie to search strings quickly. 
+## Getting Started
 
-```mermaid
-graph TD
-    classDef domain fill:#1e3a8a,stroke:#60a5fa,stroke-width:2px,color:#fff;
-    classDef service fill:#064e3b,stroke:#34d399,stroke-width:2px,color:#fff;
-    classDef infra fill:#701a75,stroke:#f472b6,stroke-width:2px,color:#fff;
-    classDef multi fill:#78350f,stroke:#fbbf24,stroke-width:2px,color:#fff;
+### Prerequisites
+- Node.js 18 or higher (for local server)
+- Firebase CLI (if deploying)
 
-    subgraph Infrastructure
-        PokemonBattleArena[PokemonBattleArena<br/>Main Orchestrator]:::infra
-    end
+### Installation
 
-    subgraph Domain Models
-        Pokemon[Pokemon<br/>State: HP, stats, types]:::domain
-        Player[Player<br/>Trainer data: team]:::domain
-        PokemonDatabase[PokemonDatabase<br/>Index + Trie]:::domain
-    end
-
-    subgraph Services
-        BattleEngine[BattleEngine<br/>Damage Calculation]:::service
-        AudioManager[AudioManager<br/>Tone.js wrapper]:::service
-        BattleLog[BattleLog<br/>RingBuffer + DOM]:::service
-        HistoryManager[HistoryManager<br/>Undo & Redo]:::service
-        ModalManager[ModalManager<br/>UI Overlay]:::service
-    end
-
-    subgraph Multiplayer
-        MultiplayerManager[MultiplayerManager<br/>Firebase RTDB Client]:::multi
-    end
-
-    PokemonBattleArena --> Domain Models
-    PokemonBattleArena --> Services
-    PokemonBattleArena --> Multiplayer
-```
-
-## Local Development
-
-Since the game is serverless, you only need to serve the static files:
-
-1. Clone the repository:
 ```bash
+# 1. Clone the repository
 git clone https://github.com/Sapeksh2001/pokemon-battle-arena.git
 cd pokemon-battle-arena
-```
 
-2. Start a local server:
-```bash
+# 2. Start a local server (no build step required)
 npx http-server -p 3000
 ```
 
-Load `http://localhost:3000` in your browser. Multiplayer works out of the box using the configured Firebase project.
+Visit `http://localhost:3000` to view the app. Multiplayer works out of the box using the configured Firebase project in `js/api/socketClient.js`.
 
-## Development Details
+---
 
-The multiplayer architecture is powered by **Firebase Realtime Database**.
-- `createRoom()` defines a new JSON node at `/rooms/<roomId>` and writes the starting configuration.
-- `joinRoom()` adds the player to the active participants within the room path.
-- Realtime changes are pushed via the `onValue()` and `onChildAdded()` listeners, syncing hit points, weather, and logs seamlessly directly between peer clients.
+## Environment Variables
 
-Damage calculation is faithful to the original games. It factors in attacker level, stat modifiers, Same Type Attack Bonus (STAB), type effectiveness multipliers, and a slight RNG variance.
+Since this is a client-side serverless application, Firebase configuration is injected directly.
 
-## Deployment
+| Variable              | Required | Description                        |
+|-----------------------|----------|------------------------------------|
+| `FIREBASE_API_KEY`    | Yes      | API Key for Firebase project       |
+| `FIREBASE_AUTH_DOMAIN`| Yes      | Firebase Authentication Domain     |
+| `FIREBASE_DATABASE_URL`| Yes | Realtime Database URL              |
+| `FIREBASE_PROJECT_ID` | Yes      | Project Identifier                 |
+| `FIREBASE_STORAGE_BUCKET`| Yes    | Default Storage Bucket             |
+| `FIREBASE_MESSAGING_ID`| Yes    | Messaging Sender ID                |
+| `FIREBASE_APP_ID`     | Yes      | Web App Identifier                 |
 
-Because the application is purely static, deploying it is trivial:
+*Note: In the current setup, these values are hardcoded in `js/api/socketClient.js` for quick development, but should ideally be passed through a build process for production environments.*
 
-1. Configure your Firebase project and paste your `firebaseConfig` object into `js/api/socketClient.js`.
-2. Deploy to **Firebase Hosting**:
-```bash
-npx firebase-tools login
-npx firebase-tools deploy
+---
+
+## Documentation
+
+| Document                   | Description                                  |
+|----------------------------|----------------------------------------------|
+| [PRD.md](./PRD.md)         | Product requirements and success metrics      |
+| [APP_FLOW.md](./APP_FLOW.md) | User flows, navigation map, screen inventory |
+| [TECH_STACK.md](./TECH_STACK.md) | All dependencies with exact versions    |
+| [FRONTEND_GUIDELINES.md](./FRONTEND_GUIDELINES.md) | Design system, tokens, components |
+| [BACKEND_STRUCTURE.md](./BACKEND_STRUCTURE.md) | DB schema, API endpoints, auth   |
+| [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md) | Build phases and milestones    |
+
+---
+
+## Contributing
+
+### Branch Naming
+- `feature/[short-description]` — New features
+- `fix/[short-description]` — Bug fixes
+- `hotfix/[short-description]` — Urgent production fixes
+- `docs/[short-description]` — Documentation updates
+
+### Commit Convention
+Follow [Conventional Commits](https://www.conventionalcommits.org/):
+```
+feat: add held items support
+fix: resolve form change button disabling issue
+docs: update README with environment variables
 ```
 
-## File Breakdown
+### Pull Request Process
+1. Create a branch from `main`
+2. Implement your changes
+3. Open a Pull Request with a clear description of the modifications
+4. Request a review from the repository owner
 
-| Directory/File | Purpose |
-|------|---------|
-| `/js/models/` | Domain definitions (`Player.js`, `Pokemon.js`) |
-| `/js/services/` | Game engines (`BattleEngine.js`, `PokemonDatabase.js`, `DataLoader.js`, etc.) |
-| `/js/ui/` | UI and views (`UIRenderer.js`, `ModalManager.js`) |
-| `/js/api/` | Real-time networking wrapper (`socketClient.js`) |
-| `/js/utils/` | Data structures (`RingBuffer.js`, `Trie.js`) |
-| `script.js` | Core UI glue and orchestrator setup |
-| `js/main.js` | The `PokemonBattleArena` bootstrap class |
-| `style.css` | Animations, colors, retro pixel-art styling |
-| `index.html` | Entry point, loader, modals, lobby |
-
-## Roadmap
-
-- Competitive Ranked Mode (Elo/Glicko matchmaking).
-- Held items like Leftovers and Choice Band.
-- A basic Minimax AI so you can practice offline without juggling tabs.
+---
 
 ## License
-
-This project is open-source under the MIT License. Pokémon sprites and audio assets belong to Nintendo and Game Freak.
+MIT License — see [LICENSE](./LICENSE) for details. Pokémon sprites and audio assets belong to Nintendo and Game Freak.
