@@ -2,94 +2,91 @@
 
 ## 1. Product Overview
 - **Project Title**: Pokémon Battle Arena
-- **Version**: 1.0
+- **Version**: 1.0.1
 - **Last Updated**: 2026-03-22
 - **Owner**: Sapeksh Sapeksh
 
 ## 2. Problem Statement
-Provide a lightweight, fast, zero-installation retro-style Pokémon battle simulator that allows friends to jump right into real-time battles without downloading heavy clients or managing complex accounts.
+Existing Pokémon battle simulators are often feature-heavy, requiring account creation, complex team building sheets, or client downloads. There is a need for a lightweight, fast, zero-installation retro-style simulator that allows friends to jump right into real-time battles using a simple 6-digit room code.
 
 ## 3. Goals & Objectives
 ### Business Goals
-- Deliver a stable multiplayer experience with minimal latency.
-- Achieve feature parity with core Pokémon battle mechanics (types, stats, status, weather, forms).
+- Deliver a stable multiplayer experience with minimal latency (<100ms sync) using Firebase RTDB.
+- Achieve formulaic parity with core Pokémon battle mechanics (Generation 5 / Black & White era as a baseline).
 
 ### User Goals
-- Quickly build a team of 6 Pokémon.
-- Connect to a friend via a simple 6-digit room code.
-- Experience a nostalgic, pixel-art battle interface with sound.
+- Quickly build a team of 6 from a dataset of 1000+ Pokémon.
+- Connect to an opponent via a 6-digit room code with zero friction.
+- Experience a nostalgic, pixel-art battle interface with dynamic audio.
 
 ## 4. Success Metrics
-- **Connection Speed**: Time to join room < 2 seconds.
-- **Sync Reliability**: 0 desync errors during a 10-turn battle.
-- **Game Accuracy**: Damage calculations perfectly match Generation 5+ standards.
+- **Connection Speed**: Time from entering room code to joining Lobby < 2 seconds.
+- **Sync Reliability**: Complete parity of HP, stats, and weather states across peers during a continuous 20-turn battle.
+- **Game Accuracy**: Damage calculations perfectly match authentic formulas (incorporating Level, Power, A/D scaling, STAB, Type Multipliers, and 85-100% RNG variance).
 
 ## 5. Target Users & Personas
 ### Primary Persona: Retro Gamer / Pokémon Fan
 - **Demographics**: 15-35 years old.
-- **Pain Points**: Existing simulators are too complex or bulky.
-- **Goals**: Quick, casual battles with faithful mechanics.
-- **Technical Proficiency**: Moderate to High.
+- **Pain Points**: Existing simulators are too complex; lack of casual "instant play" options.
+- **Goals**: Quick battles with faithful mechanics.
+- **Technical Proficiency**: Moderate.
 
 ## 6. Features & Requirements
 ### Must-Have Features (P0)
-1. **Real-Time Multiplayer**
-   - Description: Sync game state across clients using Firebase.
-   - User Story: As a player, I want to see my opponent's moves immediately so the battle flows naturally.
-   - Acceptance Criteria: Both clients reflect the exact same HP and battle log after a turn.
+1. **Real-Time Multiplayer Sync**
+   - User Story: As a player, I want to see opponent moves instantly so the battle flows naturally.
+   - Acceptance Criteria: Client-side engine resolves the turn and patches Firebase `/rooms/$roomId` synchronously.
 
-2. **Core Battle Mechanics**
-   - Description: Damage calculation, STAB, type effectiveness, and stat buffs/debuffs.
-   - User Story: As a competitive battler, I expect a super-effective STAB move to deal appropriate damage based on the standard formulas.
-   - Acceptance Criteria: Damage aligns within expected RNG bounds of the original games.
+2. **Core Battle Engine Mechanics**
+   - User Story: As a competitive battler, I expect a super-effective STAB move to deal expected damage.
+   - Acceptance Criteria: 
+     - Formula: `((((2 * Level / 5) + 2) * Power * A / D) / 50 + 2) * Weather * STAB * Type * RNG`
+     - Physical vs Special split is accurately respected.
 
-3. **Team Management**
-   - Description: UI to select and replace 6 Pokémon.
+3. **Team Management & Selection**
    - User Story: As a player, I want to customize my team before the battle starts.
-   - Acceptance Criteria: The UI allows searching and swapping 6 distinct Pokémon.
+   - Acceptance Criteria: `UIRenderer` builds a paginated/scrollable list of Pokémon indexed by a Trie for instant O(1) text search.
 
 ### Should-Have Features (P1)
-1. **Form Changes & Evolutions**
-   - Description: Mid-battle or pre-battle alternate forms (e.g., Alolan forms, Megas).
-   - User Story: As a player, I want to use regional variants of my favorite Pokémon.
-   - Acceptance Criteria: Form button correctly swaps stats, types, and sprites.
+1. **Form Changes & Evolutions (In-Battle)**
+   - User Story: As a player, I want to use regional variants (e.g., Alolan Diglett) or perform mid-battle evolutions.
+   - Acceptance Criteria: The FORM button accesses `db.getForms()` securely, swapping stats, types, and the sprite dynamically, retaining fractional HP ratio.
 
 2. **Status and Weather Effects**
-   - Description: Burn, Paralyze, Poison, Hail, Sandstorm mechanics.
-   - Acceptance Criteria: Weather deals end-of-turn damage; status affects stats/turn logic.
+   - Acceptance Criteria:
+     - **Weather**: Hail, Sandstorm (1/16th Max HP end-of-turn damage unless immune via type), Rain (Water dmg x1.5), Sun (Fire dmg x1.5).
+     - **Status**: Burn (Atk x0.5), Paralyze (Spd x0.25).
 
 ### Nice-to-Have Features (P2)
 1. **Undo/Redo System**
-   - Description: Ability to rollback turns for testing.
-   - User Story: As a developer/tester, I want to rewind a turn to verify RNG rolls.
+   - Description: Ability to rollback turns for RNG testing.
+   - Acceptance Criteria: Utilizing `RingBuffer.js` to store the last 50 turns without memory leaks, seamlessly re-rendering previous states.
 
 ## 7. Explicitly OUT OF SCOPE
-- 3D Graphics or Animations
-- Single-player Campaign Story Mode
-- Item Management (Potions, Revives) in this iteration
-- Account Registration and Passwords (relying solely on room codes)
+- 3D Graphics or Animations (Strict 2D Pixel Art enforced).
+- Single-player AI Campaign Story Mode.
+- Complex Item Management (Potions, Revives) in this iteration.
+- Account Registration/OAuth (relying solely on ephemeral room codes).
 
 ## 8. User Scenarios
 ### Scenario 1: Quick Battle Setup
 - **Context**: Two friends decide to battle.
 - **Steps**: 
-  1. Player A opens site, enters a 6-digit room code, joins.
-  2. Player B opens site, enters identical code, joins.
-  3. Both select teams and click "Ready".
-- **Expected Outcome**: They enter the battle arena synced together.
+  1. Player A opens site, enters "123456", joins.
+  2. Player B enters "123456", joins.
+  3. Both select teams via dropdowns and click "Ready".
+- **Expected Outcome**: They enter the synced battle arena simultaneously.
 
 ## 9. Dependencies & Constraints
-- **Technical Constraints**: Firebase Realtime Database quota limits format of sync (needs to be lightweight JSON).
-- **External Dependencies**: Firebase CDN, raw dataset script for Pokémon stats.
+- **Technical Constraints**: Firebase RTDB JSON node structure limits large array pushes. Arrays must be patched as objects where possible to avoid index collisions.
+- **Data Dependencies**: `Pokemon_NewDataset.js`, `moves_data.js` must be pre-loaded fully before the app mounts. Memory constraint ~15MB for raw JSON objects.
 
 ## 10. Timeline & Milestones
-- **MVP**: Working combat logic and basic UI.
-- **V1.0**: Form changes, weather effects, undo/redo, audio integration. (Current Phase).
+- **MVP**: Combat logic, DOM rendering, UI shell.
+- **V1.0**: Multiplayer sync, Weather, Statuses.
+- **V1.1**: Responsive layout fixes, deep form change resolutions (Current).
 
-## 11. Non-Functional Requirements
-- **Performance**: Game logic runs <16ms per frame to avoid UI locking.
-- **Security**: No database injection vulnerabilities via room code inputs.
-- **Accessibility**: High contrast pixel fonts with clear color indicators for stat colors.
-
-## 12. References & Resources
-- Bulbapedia damage calculation algorithms.
+## 11. Security & NFRs
+- **Performance**: DOM updates batched using `requestAnimationFrame` where possible.
+- **Security**: Prevent XSS by escaping player names in the Battle Log.
+- **Accessibility**: 16:9 fixed ratio scaled via `vmin` to remain wholly visible on any monitor, high contrast pixel fonts.
