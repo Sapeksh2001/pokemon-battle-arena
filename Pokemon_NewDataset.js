@@ -92,8 +92,8 @@ const MergedPokemonData = {
                   "Grass",
                   "Poison"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/venusaurgmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/venusaurgmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/venusaur.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/venusaur.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -210,8 +210,8 @@ const MergedPokemonData = {
                   "Fire",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/charizardgmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/charizardgmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/charizard.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/charizard.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -306,8 +306,8 @@ const MergedPokemonData = {
                 "types": [
                   "Water"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/blastoisegmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/blastoisegmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/blastoise.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/blastoise.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -386,8 +386,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/butterfreegmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/butterfreegmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/butterfree.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/butterfree.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -613,8 +613,8 @@ const MergedPokemonData = {
               "Dark",
               "Normal"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/raticatealola.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/raticatealola.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/raticate.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/raticate.mp3",
             "tier": "Alolan",
             "isSeparateEntry": false
           },
@@ -632,8 +632,8 @@ const MergedPokemonData = {
               "Dark",
               "Normal"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/raticatealolatotem.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/raticatealolatotem.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/raticate.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/raticate.mp3",
             "tier": "Alolan",
             "isSeparateEntry": false
           }
@@ -656,8 +656,8 @@ const MergedPokemonData = {
           "Dark",
           "Normal"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rattataalola.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/rattataalola.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rattata.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/rattata.mp3",
         "tier": "Alolan",
         "isSeparateEntry": false
       }
@@ -1430,8 +1430,8 @@ const MergedPokemonData = {
         "types": [
           "Normal"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/meowthgmax.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/meowthgmax.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/meowth.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/meowth.mp3",
         "tier": "G-Max",
         "isSeparateEntry": false
       }
@@ -1835,8 +1835,8 @@ const MergedPokemonData = {
                 "types": [
                   "Fighting"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/machampgmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/machampgmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/machamp.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/machamp.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -2143,8 +2143,8 @@ const MergedPokemonData = {
               "Psychic",
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/rapidashgalar.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/rapidashgalar.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/rapidash.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/rapidash.mp3",
             "tier": "Galarian",
             "isSeparateEntry": false
           }
@@ -2166,8 +2166,8 @@ const MergedPokemonData = {
         "types": [
           "Psychic"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ponytagalar.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/ponytagalar.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ponyta.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/ponyta.mp3",
         "tier": "Galarian",
         "isSeparateEntry": false
       }
@@ -2406,8 +2406,8 @@ const MergedPokemonData = {
         "types": [
           "Fighting"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/farfetchdgalar.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/farfetchdgalar.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/farfetchd.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/farfetchd.mp3",
         "tier": "Galarian",
         "isSeparateEntry": false
       }
@@ -2699,8 +2699,8 @@ const MergedPokemonData = {
                   "Ghost",
                   "Poison"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/gengargmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/gengargmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/gengar.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/gengar.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -2861,8 +2861,8 @@ const MergedPokemonData = {
             "types": [
               "Water"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/kinglergmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/kinglergmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/kingler.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/kingler.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -3060,8 +3060,8 @@ const MergedPokemonData = {
               "Fire",
               "Ghost"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/marowakalola.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/marowakalola.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/marowak.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/marowak.mp3",
             "tier": "Alolan",
             "isSeparateEntry": false
           },
@@ -3079,8 +3079,8 @@ const MergedPokemonData = {
               "Fire",
               "Ghost"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/marowakalolatotem.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/marowakalolatotem.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/marowak.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/marowak.mp3",
             "tier": "Alolan",
             "isSeparateEntry": false
           }
@@ -3775,8 +3775,8 @@ const MergedPokemonData = {
           "Water",
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/laprasgmax.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/laprasgmax.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/lapras.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/lapras.mp3",
         "tier": "G-Max",
         "isSeparateEntry": false
       }
@@ -3985,8 +3985,8 @@ const MergedPokemonData = {
         "types": [
           "Normal"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/eeveestarter.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/eeveestarter.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/eevee.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/eevee.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -4003,8 +4003,8 @@ const MergedPokemonData = {
         "types": [
           "Normal"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/eeveegmax.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/eeveegmax.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/eevee.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/eevee.mp3",
         "tier": "G-Max",
         "isSeparateEntry": false
       }
@@ -5048,8 +5048,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachucosplay.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachucosplay.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5066,8 +5066,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachurockstar.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachurockstar.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5084,8 +5084,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachubelle.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachubelle.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5102,8 +5102,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachupopstar.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachupopstar.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5120,8 +5120,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachuphd.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachuphd.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5138,8 +5138,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachulibre.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachulibre.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5156,8 +5156,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachuoriginal.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachuoriginal.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5174,8 +5174,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachuhoenn.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachuhoenn.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5192,8 +5192,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachusinnoh.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachusinnoh.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5210,8 +5210,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachuunova.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachuunova.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5228,8 +5228,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachukalos.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachukalos.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5246,8 +5246,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachupartner.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachupartner.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5264,8 +5264,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachustarter.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachustarter.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -5282,8 +5282,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachugmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachugmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           },
@@ -5300,8 +5300,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachuworld.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachuworld.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/pikachu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -5323,8 +5323,8 @@ const MergedPokemonData = {
         "types": [
           "Electric"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/pichuspikyeared.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/pichuspikyeared.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/pichu.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/pichu.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -6121,8 +6121,8 @@ const MergedPokemonData = {
             "types": [
               "Normal"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/dudunsparcethreesegment.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/dudunsparcethreesegment.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/dudunsparce.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/dudunsparce.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -6438,8 +6438,8 @@ const MergedPokemonData = {
                   "Ground",
                   "Normal"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/ursalunabloodmoon.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/ursalunabloodmoon.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/ursaluna.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/ursaluna.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               }
@@ -6587,8 +6587,8 @@ const MergedPokemonData = {
         "types": [
           "Ghost"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/corsolagalar.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/corsolagalar.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/corsola.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/corsola.mp3",
         "tier": "Galarian",
         "isSeparateEntry": false
       }
@@ -7634,8 +7634,8 @@ const MergedPokemonData = {
               "Dark",
               "Normal"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/linoonegalar.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/linoonegalar.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/linoone.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/linoone.mp3",
             "tier": "Galarian",
             "isSeparateEntry": false
           }
@@ -7658,8 +7658,8 @@ const MergedPokemonData = {
           "Dark",
           "Normal"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zigzagoongalar.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/zigzagoongalar.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zigzagoon.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/zigzagoon.mp3",
         "tier": "Galarian",
         "isSeparateEntry": false
       }
@@ -9679,8 +9679,8 @@ const MergedPokemonData = {
         "types": [
           "Fire"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/castformsunny.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/castformsunny.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/castform.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/castform.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -9697,8 +9697,8 @@ const MergedPokemonData = {
         "types": [
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/castformrainy.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/castformrainy.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/castform.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/castform.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -9715,8 +9715,8 @@ const MergedPokemonData = {
         "types": [
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/castformsnowy.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/castformsnowy.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/castform.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/castform.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -10698,8 +10698,8 @@ const MergedPokemonData = {
         "types": [
           "Psychic"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deoxysattack.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/deoxysattack.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deoxys.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/deoxys.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -10716,8 +10716,8 @@ const MergedPokemonData = {
         "types": [
           "Psychic"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deoxysdefense.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/deoxysdefense.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deoxys.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/deoxys.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -10734,8 +10734,8 @@ const MergedPokemonData = {
         "types": [
           "Psychic"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deoxysspeed.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/deoxysspeed.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deoxys.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/deoxys.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -11333,8 +11333,8 @@ const MergedPokemonData = {
               "Bug",
               "Ground"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/wormadamsandy.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/wormadamsandy.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/wormadam.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/wormadam.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -11352,8 +11352,8 @@ const MergedPokemonData = {
               "Bug",
               "Steel"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/wormadamtrash.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/wormadamtrash.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/wormadam.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/wormadam.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -11395,8 +11395,8 @@ const MergedPokemonData = {
         "types": [
           "Bug"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/burmysandy.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/burmysandy.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/burmy.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/burmy.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -11413,8 +11413,8 @@ const MergedPokemonData = {
         "types": [
           "Bug"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/burmytrash.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/burmytrash.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/burmy.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/burmy.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -11566,8 +11566,8 @@ const MergedPokemonData = {
             "types": [
               "Grass"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/cherrimsunshine.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/cherrimsunshine.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/cherrim.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/cherrim.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -11626,8 +11626,8 @@ const MergedPokemonData = {
               "Water",
               "Ground"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gastrodoneast.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/gastrodoneast.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gastrodon.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/gastrodon.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -11649,8 +11649,8 @@ const MergedPokemonData = {
         "types": [
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/shelloseast.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/shelloseast.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/shellos.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/shellos.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -12025,8 +12025,8 @@ const MergedPokemonData = {
               "Ice",
               "Psychic"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/mrmimegalar.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/mrmimegalar.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/mrmime.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/mrmime.mp3",
             "tier": "Galarian",
             "isSeparateEntry": false
           }
@@ -12282,8 +12282,8 @@ const MergedPokemonData = {
             "types": [
               "Normal"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/snorlaxgmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/snorlaxgmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/snorlax.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/snorlax.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -12686,8 +12686,8 @@ const MergedPokemonData = {
           "Electric",
           "Fire"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotomheat.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/rotomheat.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotom.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/rotom.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -12705,8 +12705,8 @@ const MergedPokemonData = {
           "Electric",
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotomwash.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/rotomwash.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotom.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/rotom.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -12724,8 +12724,8 @@ const MergedPokemonData = {
           "Electric",
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotomfrost.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/rotomfrost.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotom.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/rotom.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -12743,8 +12743,8 @@ const MergedPokemonData = {
           "Electric",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotomfan.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/rotomfan.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotom.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/rotom.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -12762,8 +12762,8 @@ const MergedPokemonData = {
           "Electric",
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotommow.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/rotommow.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rotom.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/rotom.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -12859,8 +12859,8 @@ const MergedPokemonData = {
           "Steel",
           "Dragon"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/dialgaorigin.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/dialgaorigin.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/dialga.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/dialga.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -12899,8 +12899,8 @@ const MergedPokemonData = {
           "Water",
           "Dragon"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/palkiaorigin.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/palkiaorigin.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/palkia.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/palkia.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -12998,8 +12998,8 @@ const MergedPokemonData = {
           "Ghost",
           "Dragon"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/giratinaorigin.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/giratinaorigin.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/giratina.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/giratina.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -13132,8 +13132,8 @@ const MergedPokemonData = {
           "Grass",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/shayminsky.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/shayminsky.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/shaymin.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/shaymin.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -13170,8 +13170,8 @@ const MergedPokemonData = {
         "types": [
           "Bug"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusbug.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusbug.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13188,8 +13188,8 @@ const MergedPokemonData = {
         "types": [
           "Dark"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusdark.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusdark.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13206,8 +13206,8 @@ const MergedPokemonData = {
         "types": [
           "Dragon"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusdragon.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusdragon.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13224,8 +13224,8 @@ const MergedPokemonData = {
         "types": [
           "Electric"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceuselectric.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceuselectric.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13242,8 +13242,8 @@ const MergedPokemonData = {
         "types": [
           "Fairy"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusfairy.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusfairy.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13260,8 +13260,8 @@ const MergedPokemonData = {
         "types": [
           "Fighting"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusfighting.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusfighting.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13278,8 +13278,8 @@ const MergedPokemonData = {
         "types": [
           "Fire"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusfire.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusfire.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13296,8 +13296,8 @@ const MergedPokemonData = {
         "types": [
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusflying.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusflying.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13314,8 +13314,8 @@ const MergedPokemonData = {
         "types": [
           "Ghost"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusghost.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusghost.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13332,8 +13332,8 @@ const MergedPokemonData = {
         "types": [
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusgrass.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusgrass.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13350,8 +13350,8 @@ const MergedPokemonData = {
         "types": [
           "Ground"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusground.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusground.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13368,8 +13368,8 @@ const MergedPokemonData = {
         "types": [
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusice.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusice.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13386,8 +13386,8 @@ const MergedPokemonData = {
         "types": [
           "Poison"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceuspoison.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceuspoison.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13404,8 +13404,8 @@ const MergedPokemonData = {
         "types": [
           "Psychic"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceuspsychic.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceuspsychic.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13422,8 +13422,8 @@ const MergedPokemonData = {
         "types": [
           "Rock"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceusrock.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceusrock.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13440,8 +13440,8 @@ const MergedPokemonData = {
         "types": [
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceussteel.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceussteel.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -13458,8 +13458,8 @@ const MergedPokemonData = {
         "types": [
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceuswater.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/arceuswater.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/arceus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/arceus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -14730,8 +14730,8 @@ const MergedPokemonData = {
         "types": [
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/basculinbluestriped.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/basculinbluestriped.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/basculin.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/basculin.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -14748,8 +14748,8 @@ const MergedPokemonData = {
         "types": [
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/basculinwhitestriped.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/basculinwhitestriped.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/basculin.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/basculin.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -14865,8 +14865,8 @@ const MergedPokemonData = {
               "Fire",
               "Psychic"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/darmanitanzen.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/darmanitanzen.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/darmanitan.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/darmanitan.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -14883,8 +14883,8 @@ const MergedPokemonData = {
             "types": [
               "Ice"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/darmanitangalar.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/darmanitangalar.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/darmanitan.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/darmanitan.mp3",
             "tier": "Galarian",
             "isSeparateEntry": false
           },
@@ -14902,8 +14902,8 @@ const MergedPokemonData = {
               "Ice",
               "Fire"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/darmanitangalarzen.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/darmanitangalarzen.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/darmanitan.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/darmanitan.mp3",
             "tier": "Galarian",
             "isSeparateEntry": false
           }
@@ -14925,8 +14925,8 @@ const MergedPokemonData = {
         "types": [
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/darumakagalar.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/darumakagalar.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/darumaka.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/darumaka.mp3",
         "tier": "Galarian",
         "isSeparateEntry": false
       }
@@ -15125,8 +15125,8 @@ const MergedPokemonData = {
           "Ground",
           "Ghost"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/yamaskgalar.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/yamaskgalar.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/yamask.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/yamask.mp3",
         "tier": "Galarian",
         "isSeparateEntry": false
       }
@@ -15261,8 +15261,8 @@ const MergedPokemonData = {
             "types": [
               "Poison"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/garbodorgmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/garbodorgmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/garbodor.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/garbodor.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -15662,8 +15662,8 @@ const MergedPokemonData = {
           "Normal",
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deerlingsummer.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/deerlingsummer.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deerling.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/deerling.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -15681,8 +15681,8 @@ const MergedPokemonData = {
           "Normal",
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deerlingautumn.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/deerlingautumn.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deerling.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/deerling.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -15700,8 +15700,8 @@ const MergedPokemonData = {
           "Normal",
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deerlingwinter.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/deerlingwinter.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/deerling.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/deerling.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -16397,8 +16397,8 @@ const MergedPokemonData = {
           "Ground",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/stunfiskgalar.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/stunfiskgalar.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/stunfisk.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/stunfisk.mp3",
         "tier": "Galarian",
         "isSeparateEntry": false
       }
@@ -16939,8 +16939,8 @@ const MergedPokemonData = {
         "types": [
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/tornadustherian.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/tornadustherian.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/tornadus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/tornadus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -16979,8 +16979,8 @@ const MergedPokemonData = {
           "Electric",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/thundurustherian.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/thundurustherian.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/thundurus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/thundurus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -17059,8 +17059,8 @@ const MergedPokemonData = {
           "Ground",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/landorustherian.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/landorustherian.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/landorus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/landorus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -17099,8 +17099,8 @@ const MergedPokemonData = {
           "Dragon",
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/kyuremblack.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/kyuremblack.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/kyurem.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/kyurem.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -17118,8 +17118,8 @@ const MergedPokemonData = {
           "Dragon",
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/kyuremwhite.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/kyuremwhite.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/kyurem.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/kyurem.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -17158,8 +17158,8 @@ const MergedPokemonData = {
           "Water",
           "Fighting"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/keldeoresolute.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/keldeoresolute.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/keldeo.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/keldeo.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -17198,8 +17198,8 @@ const MergedPokemonData = {
           "Normal",
           "Fighting"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/meloettapirouette.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/meloettapirouette.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/meloetta.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/meloetta.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -17238,8 +17238,8 @@ const MergedPokemonData = {
           "Bug",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/genesectdouse.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/genesectdouse.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/genesect.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/genesect.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -17257,8 +17257,8 @@ const MergedPokemonData = {
           "Bug",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/genesectshock.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/genesectshock.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/genesect.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/genesect.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -17276,8 +17276,8 @@ const MergedPokemonData = {
           "Bug",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/genesectburn.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/genesectburn.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/genesect.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/genesect.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -17295,8 +17295,8 @@ const MergedPokemonData = {
           "Bug",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/genesectchill.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/genesectchill.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/genesect.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/genesect.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -17546,8 +17546,8 @@ const MergedPokemonData = {
                   "Water",
                   "Dark"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/greninjabond.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/greninjabond.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/greninja.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/greninja.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17565,8 +17565,8 @@ const MergedPokemonData = {
                   "Water",
                   "Dark"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/greninjaash.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/greninjaash.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/greninja.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/greninja.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               }
@@ -17747,8 +17747,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonicysnow.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonicysnow.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17766,8 +17766,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonpolar.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonpolar.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17785,8 +17785,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillontundra.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillontundra.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17804,8 +17804,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivilloncontinental.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivilloncontinental.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17823,8 +17823,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillongarden.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillongarden.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17842,8 +17842,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonelegant.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonelegant.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17861,8 +17861,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonmodern.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonmodern.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17880,8 +17880,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonmarine.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonmarine.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17899,8 +17899,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonarchipelago.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonarchipelago.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17918,8 +17918,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonhighplains.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonhighplains.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17937,8 +17937,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonsandstorm.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonsandstorm.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17956,8 +17956,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonriver.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonriver.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17975,8 +17975,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonmonsoon.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonmonsoon.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -17994,8 +17994,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonsavanna.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonsavanna.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -18013,8 +18013,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonsun.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonsun.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -18032,8 +18032,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonocean.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonocean.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -18051,8 +18051,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonjungle.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonjungle.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -18070,8 +18070,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonfancy.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonfancy.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               },
@@ -18089,8 +18089,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Flying"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillonpokeball.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillonpokeball.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vivillon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vivillon.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               }
@@ -18250,8 +18250,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/floetteeternal.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/floetteeternal.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/floette.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/floette.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -18406,8 +18406,8 @@ const MergedPokemonData = {
             "types": [
               "Psychic"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/meowstic-m-mega.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/meowstic-m-mega.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/meowstic.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/meowstic.mp3",
             "tier": "Mega",
             "isSeparateEntry": false
           },
@@ -18424,8 +18424,8 @@ const MergedPokemonData = {
             "types": [
               "Psychic"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/meowstic-f-mega.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/meowstic-f-mega.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/meowstic.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/meowstic.mp3",
             "tier": "Mega",
             "isSeparateEntry": false
           },
@@ -18442,8 +18442,8 @@ const MergedPokemonData = {
             "types": [
               "Psychic"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/meowsticf.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/meowsticf.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/meowstic.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/meowstic.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -18520,8 +18520,8 @@ const MergedPokemonData = {
                   "Steel",
                   "Ghost"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/aegislashblade.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/aegislashblade.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/aegislash.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/aegislash.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               }
@@ -19248,8 +19248,8 @@ const MergedPokemonData = {
               "Ghost",
               "Grass"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gourgeistsmall.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/gourgeistsmall.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gourgeist.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/gourgeist.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -19267,8 +19267,8 @@ const MergedPokemonData = {
               "Ghost",
               "Grass"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gourgeistlarge.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/gourgeistlarge.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gourgeist.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/gourgeist.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -19286,8 +19286,8 @@ const MergedPokemonData = {
               "Ghost",
               "Grass"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gourgeistsuper.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/gourgeistsuper.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gourgeist.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/gourgeist.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -19310,8 +19310,8 @@ const MergedPokemonData = {
           "Ghost",
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/pumpkaboosmall.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/pumpkaboosmall.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/pumpkaboo.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/pumpkaboo.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -19329,8 +19329,8 @@ const MergedPokemonData = {
           "Ghost",
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/pumpkaboolarge.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/pumpkaboolarge.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/pumpkaboo.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/pumpkaboo.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -19348,8 +19348,8 @@ const MergedPokemonData = {
           "Ghost",
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/pumpkaboosuper.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/pumpkaboosuper.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/pumpkaboo.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/pumpkaboo.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -19486,8 +19486,8 @@ const MergedPokemonData = {
         "types": [
           "Fairy"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/xerneasneutral.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/xerneasneutral.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/xerneas.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/xerneas.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -19565,8 +19565,8 @@ const MergedPokemonData = {
           "Dragon",
           "Ground"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zygarde10.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/zygarde10.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zygarde.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/zygarde.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -19584,8 +19584,8 @@ const MergedPokemonData = {
           "Dragon",
           "Ground"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zygardecomplete.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/zygardecomplete.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zygarde.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/zygarde.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -19664,8 +19664,8 @@ const MergedPokemonData = {
           "Psychic",
           "Dark"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/hoopaunbound.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/hoopaunbound.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/hoopa.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/hoopa.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -20002,8 +20002,8 @@ const MergedPokemonData = {
             "types": [
               "Normal"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gumshoostotem.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/gumshoostotem.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/gumshoos.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/gumshoos.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -20079,8 +20079,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Electric"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vikavolttotem.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/vikavolttotem.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/vikavolt.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/vikavolt.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               }
@@ -20187,8 +20187,8 @@ const MergedPokemonData = {
           "Electric",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/oricoriopompom.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/oricoriopompom.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/oricorio.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/oricorio.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -20206,8 +20206,8 @@ const MergedPokemonData = {
           "Psychic",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/oricoriopau.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/oricoriopau.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/oricorio.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/oricorio.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -20225,8 +20225,8 @@ const MergedPokemonData = {
           "Ghost",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/oricoriosensu.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/oricoriosensu.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/oricorio.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/oricorio.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -20282,8 +20282,8 @@ const MergedPokemonData = {
               "Bug",
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/ribombeetotem.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/ribombeetotem.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/ribombee.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/ribombee.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -20340,8 +20340,8 @@ const MergedPokemonData = {
             "types": [
               "Rock"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/lycanrocmidnight.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/lycanrocmidnight.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/lycanroc.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/lycanroc.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -20358,8 +20358,8 @@ const MergedPokemonData = {
             "types": [
               "Rock"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/lycanrocdusk.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/lycanrocdusk.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/lycanroc.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/lycanroc.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -20381,8 +20381,8 @@ const MergedPokemonData = {
         "types": [
           "Rock"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rockruffdusk.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/rockruffdusk.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/rockruff.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/rockruff.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -20419,8 +20419,8 @@ const MergedPokemonData = {
         "types": [
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/wishiwashischool.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/wishiwashischool.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/wishiwashi.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/wishiwashi.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -20556,8 +20556,8 @@ const MergedPokemonData = {
               "Water",
               "Bug"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/araquanidtotem.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/araquanidtotem.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/araquanid.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/araquanid.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -20614,8 +20614,8 @@ const MergedPokemonData = {
             "types": [
               "Grass"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/lurantistotem.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/lurantistotem.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/lurantis.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/lurantis.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -20716,8 +20716,8 @@ const MergedPokemonData = {
               "Poison",
               "Fire"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/salazzletotem.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/salazzletotem.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/salazzle.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/salazzle.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -21053,8 +21053,8 @@ const MergedPokemonData = {
             "types": [
               "Bug"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallybug.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallybug.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21071,8 +21071,8 @@ const MergedPokemonData = {
             "types": [
               "Dark"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallydark.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallydark.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21089,8 +21089,8 @@ const MergedPokemonData = {
             "types": [
               "Dragon"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallydragon.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallydragon.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21107,8 +21107,8 @@ const MergedPokemonData = {
             "types": [
               "Electric"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyelectric.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyelectric.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21125,8 +21125,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyfairy.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyfairy.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21143,8 +21143,8 @@ const MergedPokemonData = {
             "types": [
               "Fighting"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyfighting.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyfighting.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21161,8 +21161,8 @@ const MergedPokemonData = {
             "types": [
               "Fire"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyfire.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyfire.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21179,8 +21179,8 @@ const MergedPokemonData = {
             "types": [
               "Flying"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyflying.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyflying.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21197,8 +21197,8 @@ const MergedPokemonData = {
             "types": [
               "Ghost"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyghost.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyghost.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21215,8 +21215,8 @@ const MergedPokemonData = {
             "types": [
               "Grass"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallygrass.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallygrass.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21233,8 +21233,8 @@ const MergedPokemonData = {
             "types": [
               "Ground"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyground.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyground.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21251,8 +21251,8 @@ const MergedPokemonData = {
             "types": [
               "Ice"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyice.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyice.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21269,8 +21269,8 @@ const MergedPokemonData = {
             "types": [
               "Poison"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallypoison.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallypoison.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21287,8 +21287,8 @@ const MergedPokemonData = {
             "types": [
               "Psychic"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallypsychic.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallypsychic.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21305,8 +21305,8 @@ const MergedPokemonData = {
             "types": [
               "Rock"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallyrock.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallyrock.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21323,8 +21323,8 @@ const MergedPokemonData = {
             "types": [
               "Steel"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallysteel.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallysteel.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -21341,8 +21341,8 @@ const MergedPokemonData = {
             "types": [
               "Water"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvallywater.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/silvallywater.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/silvally.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/silvally.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -21385,8 +21385,8 @@ const MergedPokemonData = {
           "Rock",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/miniororange.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/miniororange.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/minior.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/minior.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -21404,8 +21404,8 @@ const MergedPokemonData = {
           "Rock",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/minioryellow.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/minioryellow.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/minior.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/minior.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -21423,8 +21423,8 @@ const MergedPokemonData = {
           "Rock",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/miniorgreen.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/miniorgreen.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/minior.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/minior.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -21442,8 +21442,8 @@ const MergedPokemonData = {
           "Rock",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/miniorblue.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/miniorblue.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/minior.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/minior.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -21461,8 +21461,8 @@ const MergedPokemonData = {
           "Rock",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/miniorindigo.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/miniorindigo.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/minior.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/minior.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -21480,8 +21480,8 @@ const MergedPokemonData = {
           "Rock",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/miniorviolet.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/miniorviolet.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/minior.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/minior.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -21499,8 +21499,8 @@ const MergedPokemonData = {
           "Rock",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/miniormeteor.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/miniormeteor.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/minior.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/minior.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -21578,8 +21578,8 @@ const MergedPokemonData = {
           "Electric",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/togedemarutotem.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/togedemarutotem.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/togedemaru.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/togedemaru.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -21618,8 +21618,8 @@ const MergedPokemonData = {
           "Ghost",
           "Fairy"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/mimikyubusted.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/mimikyubusted.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/mimikyu.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/mimikyu.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -21637,8 +21637,8 @@ const MergedPokemonData = {
           "Ghost",
           "Fairy"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/mimikyutotem.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/mimikyutotem.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/mimikyu.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/mimikyu.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -21656,8 +21656,8 @@ const MergedPokemonData = {
           "Ghost",
           "Fairy"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/mimikyubustedtotem.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/mimikyubustedtotem.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/mimikyu.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/mimikyu.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -21809,8 +21809,8 @@ const MergedPokemonData = {
                   "Dragon",
                   "Fighting"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/kommoototem.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/kommoototem.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/kommoo.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/kommoo.mp3",
                 "tier": "Variant",
                 "isSeparateEntry": false
               }
@@ -22155,8 +22155,8 @@ const MergedPokemonData = {
           "Psychic",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/necrozmaduskmane.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/necrozmaduskmane.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/necrozma.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/necrozma.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -22174,8 +22174,8 @@ const MergedPokemonData = {
           "Psychic",
           "Ghost"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/necrozmadawnwings.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/necrozmadawnwings.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/necrozma.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/necrozma.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -22193,8 +22193,8 @@ const MergedPokemonData = {
           "Psychic",
           "Dragon"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/necrozmaultra.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/necrozmaultra.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/necrozma.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/necrozma.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -22252,8 +22252,8 @@ const MergedPokemonData = {
           "Steel",
           "Fairy"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/magearna-original-mega.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/magearna-original-mega.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/magearna.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/magearna.mp3",
         "tier": "Mega",
         "isSeparateEntry": false
       },
@@ -22271,8 +22271,8 @@ const MergedPokemonData = {
           "Steel",
           "Fairy"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/magearnaoriginal.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/magearnaoriginal.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/magearna.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/magearna.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -22466,8 +22466,8 @@ const MergedPokemonData = {
         "types": [
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/melmetalgmax.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/melmetalgmax.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/melmetal.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/melmetal.mp3",
         "tier": "G-Max",
         "isSeparateEntry": false
       }
@@ -22536,8 +22536,8 @@ const MergedPokemonData = {
                 "types": [
                   "Grass"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/rillaboomgmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/rillaboomgmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/rillaboom.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/rillaboom.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -22614,8 +22614,8 @@ const MergedPokemonData = {
                 "types": [
                   "Fire"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/cinderacegmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/cinderacegmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/cinderace.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/cinderace.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -22692,8 +22692,8 @@ const MergedPokemonData = {
                 "types": [
                   "Water"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/inteleongmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/inteleongmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/inteleon.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/inteleon.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -22811,8 +22811,8 @@ const MergedPokemonData = {
                   "Flying",
                   "Steel"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/corviknightgmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/corviknightgmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/corviknight.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/corviknight.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -22892,8 +22892,8 @@ const MergedPokemonData = {
                   "Bug",
                   "Psychic"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/orbeetlegmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/orbeetlegmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/orbeetle.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/orbeetle.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -23073,8 +23073,8 @@ const MergedPokemonData = {
               "Water",
               "Rock"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/drednawgmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/drednawgmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/drednaw.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/drednaw.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -23189,8 +23189,8 @@ const MergedPokemonData = {
                   "Rock",
                   "Fire"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/coalossalgmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/coalossalgmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/coalossal.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/coalossal.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -23254,8 +23254,8 @@ const MergedPokemonData = {
               "Grass",
               "Dragon"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/flapplegmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/flapplegmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/flapple.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/flapple.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -23294,8 +23294,8 @@ const MergedPokemonData = {
               "Grass",
               "Dragon"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/appletungmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/appletungmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/appletun.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/appletun.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -23393,8 +23393,8 @@ const MergedPokemonData = {
             "types": [
               "Ground"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/sandacondagmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/sandacondagmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/sandaconda.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/sandaconda.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -23437,8 +23437,8 @@ const MergedPokemonData = {
           "Flying",
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/cramorantgulping.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/cramorantgulping.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/cramorant.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/cramorant.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -23456,8 +23456,8 @@ const MergedPokemonData = {
           "Flying",
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/cramorantgorging.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/cramorantgorging.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/cramorant.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/cramorant.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -23552,8 +23552,8 @@ const MergedPokemonData = {
               "Electric",
               "Poison"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/toxtricitylowkey.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/toxtricitylowkey.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/toxtricity.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/toxtricity.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -23571,8 +23571,8 @@ const MergedPokemonData = {
               "Electric",
               "Poison"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/toxtricitygmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/toxtricitygmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/toxtricity.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/toxtricity.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           },
@@ -23590,8 +23590,8 @@ const MergedPokemonData = {
               "Electric",
               "Poison"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/toxtricitylowkeygmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/toxtricitylowkeygmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/toxtricity.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/toxtricity.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -23651,8 +23651,8 @@ const MergedPokemonData = {
               "Fire",
               "Bug"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/centiskorchgmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/centiskorchgmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/centiskorch.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/centiskorch.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -23748,8 +23748,8 @@ const MergedPokemonData = {
             "types": [
               "Ghost"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/polteageistantique.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/polteageistantique.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/polteageist.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/polteageist.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -23771,8 +23771,8 @@ const MergedPokemonData = {
         "types": [
           "Ghost"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/sinisteaantique.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/sinisteaantique.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/sinistea.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/sinistea.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -23843,8 +23843,8 @@ const MergedPokemonData = {
                   "Psychic",
                   "Fairy"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/hatterenegmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/hatterenegmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/hatterene.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/hatterene.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -23925,8 +23925,8 @@ const MergedPokemonData = {
                   "Dark",
                   "Fairy"
                 ],
-                "sprite": "https://play.pokemonshowdown.com/sprites/ani/grimmsnarlgmax.gif",
-                "cry": "https://play.pokemonshowdown.com/audio/cries/grimmsnarlgmax.mp3",
+                "sprite": "https://play.pokemonshowdown.com/sprites/ani/grimmsnarl.gif",
+                "cry": "https://play.pokemonshowdown.com/audio/cries/grimmsnarl.mp3",
                 "tier": "G-Max",
                 "isSeparateEntry": false
               }
@@ -23987,8 +23987,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremierubycream.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremierubycream.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremie.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremie.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -24005,8 +24005,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremiematchacream.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremiematchacream.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremie.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremie.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -24023,8 +24023,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremiemintcream.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremiemintcream.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremie.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremie.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -24041,8 +24041,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremielemoncream.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremielemoncream.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremie.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremie.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -24059,8 +24059,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremierubyswirl.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremierubyswirl.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremie.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremie.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -24077,8 +24077,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremiecaramelswirl.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremiecaramelswirl.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremie.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremie.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -24095,8 +24095,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremierainbowswirl.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremierainbowswirl.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremie.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremie.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           },
@@ -24113,8 +24113,8 @@ const MergedPokemonData = {
             "types": [
               "Fairy"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremiegmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremiegmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/alcremie.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/alcremie.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -24272,8 +24272,8 @@ const MergedPokemonData = {
         "types": [
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/eiscuenoice.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/eiscuenoice.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/eiscue.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/eiscue.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -24312,8 +24312,8 @@ const MergedPokemonData = {
           "Psychic",
           "Normal"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/indeedeef.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/indeedeef.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/indeedee.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/indeedee.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -24352,8 +24352,8 @@ const MergedPokemonData = {
           "Electric",
           "Dark"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/morpekohangry.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/morpekohangry.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/morpeko.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/morpeko.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -24406,8 +24406,8 @@ const MergedPokemonData = {
             "types": [
               "Steel"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/copperajahgmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/copperajahgmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/copperajah.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/copperajah.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -24551,8 +24551,8 @@ const MergedPokemonData = {
           "Steel",
           "Dragon"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/duraludongmax.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/duraludongmax.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/duraludon.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/duraludon.mp3",
         "tier": "G-Max",
         "isSeparateEntry": false
       }
@@ -24652,8 +24652,8 @@ const MergedPokemonData = {
           "Fairy",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zaciancrowned.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/zaciancrowned.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zacian.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/zacian.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -24691,8 +24691,8 @@ const MergedPokemonData = {
           "Fighting",
           "Steel"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zamazentacrowned.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/zamazentacrowned.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zamazenta.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/zamazenta.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -24731,8 +24731,8 @@ const MergedPokemonData = {
           "Poison",
           "Dragon"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/eternatuseternamax.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/eternatuseternamax.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/eternatus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/eternatus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -24787,8 +24787,8 @@ const MergedPokemonData = {
               "Fighting",
               "Water"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/urshifurapidstrike.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/urshifurapidstrike.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/urshifu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/urshifu.mp3",
             "tier": "Legendary",
             "isSeparateEntry": false
           },
@@ -24806,8 +24806,8 @@ const MergedPokemonData = {
               "Fighting",
               "Dark"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/urshifugmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/urshifugmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/urshifu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/urshifu.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           },
@@ -24825,8 +24825,8 @@ const MergedPokemonData = {
               "Fighting",
               "Water"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/urshifurapidstrikegmax.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/urshifurapidstrikegmax.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/urshifu.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/urshifu.mp3",
             "tier": "G-Max",
             "isSeparateEntry": false
           }
@@ -24869,8 +24869,8 @@ const MergedPokemonData = {
           "Dark",
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zarudedada.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/zarudedada.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/zarude.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/zarude.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -24985,8 +24985,8 @@ const MergedPokemonData = {
           "Psychic",
           "Ice"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/calyrexice.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/calyrexice.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/calyrex.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/calyrex.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -25004,8 +25004,8 @@ const MergedPokemonData = {
           "Psychic",
           "Ghost"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/calyrexshadow.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/calyrexshadow.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/calyrex.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/calyrex.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -25044,8 +25044,8 @@ const MergedPokemonData = {
           "Fairy",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/enamorustherian.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/enamorustherian.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/enamorus.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/enamorus.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -25278,8 +25278,8 @@ const MergedPokemonData = {
             "types": [
               "Normal"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/oinkolognef.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/oinkolognef.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/oinkologne.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/oinkologne.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -25476,8 +25476,8 @@ const MergedPokemonData = {
             "types": [
               "Normal"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/mausholdfour.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/mausholdfour.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/maushold.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/maushold.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -25621,8 +25621,8 @@ const MergedPokemonData = {
           "Normal",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/squawkabillyblue.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/squawkabillyblue.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/squawkabilly.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -25640,8 +25640,8 @@ const MergedPokemonData = {
           "Normal",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/squawkabillyyellow.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/squawkabillyyellow.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/squawkabilly.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -25659,8 +25659,8 @@ const MergedPokemonData = {
           "Normal",
           "Flying"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/squawkabillywhite.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/squawkabillywhite.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/squawkabilly.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -26353,8 +26353,8 @@ const MergedPokemonData = {
             "types": [
               "Water"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/palafinhero.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/palafinhero.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/palafin.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/palafin.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -26676,7 +26676,7 @@ const MergedPokemonData = {
           "Water"
         ],
         "sprite": "https://play.pokemonshowdown.com/sprites/ani/tatsugiri.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiri-curly-mega.mp3",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3",
         "tier": "Mega",
         "isSeparateEntry": false
       },
@@ -26695,7 +26695,7 @@ const MergedPokemonData = {
           "Water"
         ],
         "sprite": "https://play.pokemonshowdown.com/sprites/ani/tatsugiri.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiri-droopy-mega.mp3",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3",
         "tier": "Mega",
         "isSeparateEntry": false
       },
@@ -26714,7 +26714,7 @@ const MergedPokemonData = {
           "Water"
         ],
         "sprite": "https://play.pokemonshowdown.com/sprites/ani/tatsugiri.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiri-stretchy-mega.mp3",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3",
         "tier": "Mega",
         "isSeparateEntry": false
       },
@@ -26732,8 +26732,8 @@ const MergedPokemonData = {
           "Dragon",
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/tatsugiridroopy.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiridroopy.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/tatsugiri.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -26751,8 +26751,8 @@ const MergedPokemonData = {
           "Dragon",
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/tatsugiristretchy.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiristretchy.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/tatsugiri.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -27132,8 +27132,8 @@ const MergedPokemonData = {
         "types": [
           "Ghost"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/gimmighoulroaming.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/gimmighoulroaming.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/gimmighoul.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/gimmighoul.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -27389,8 +27389,8 @@ const MergedPokemonData = {
               "Grass",
               "Ghost"
             ],
-            "sprite": "https://play.pokemonshowdown.com/sprites/ani/sinistchamasterpiece.gif",
-            "cry": "https://play.pokemonshowdown.com/audio/cries/sinistchamasterpiece.mp3",
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/sinistcha.gif",
+            "cry": "https://play.pokemonshowdown.com/audio/cries/sinistcha.mp3",
             "tier": "Variant",
             "isSeparateEntry": false
           }
@@ -27413,8 +27413,8 @@ const MergedPokemonData = {
           "Grass",
           "Ghost"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/poltchageistartisan.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/poltchageistartisan.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/poltchageist.gif",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/poltchageist.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -27494,7 +27494,7 @@ const MergedPokemonData = {
     "types": [
       "Grass"
     ],
-    "sprite": "https://play.pokemonshowdown.com/sprites/ani/ogerpon.gif",
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
     "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3",
     "evolutions": [],
     "forms": {
@@ -27512,8 +27512,8 @@ const MergedPokemonData = {
           "Grass",
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ogerponwellspring.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerponwellspring.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -27531,8 +27531,8 @@ const MergedPokemonData = {
           "Grass",
           "Fire"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ogerponhearthflame.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerponhearthflame.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -27550,8 +27550,8 @@ const MergedPokemonData = {
           "Grass",
           "Rock"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ogerponcornerstone.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerponcornerstone.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -27568,8 +27568,8 @@ const MergedPokemonData = {
         "types": [
           "Grass"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ogerpontealtera.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpontealtera.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -27587,8 +27587,8 @@ const MergedPokemonData = {
           "Grass",
           "Water"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ogerponwellspringtera.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerponwellspringtera.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -27606,8 +27606,8 @@ const MergedPokemonData = {
           "Grass",
           "Fire"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ogerponhearthflametera.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerponhearthflametera.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -27625,8 +27625,8 @@ const MergedPokemonData = {
           "Grass",
           "Rock"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ogerponcornerstonetera.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerponcornerstonetera.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
@@ -27726,7 +27726,7 @@ const MergedPokemonData = {
     "types": [
       "Normal"
     ],
-    "sprite": "https://play.pokemonshowdown.com/sprites/ani/terapagos.gif",
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
     "cry": "https://play.pokemonshowdown.com/audio/cries/terapagos.mp3",
     "evolutions": [],
     "forms": {
@@ -27743,8 +27743,8 @@ const MergedPokemonData = {
         "types": [
           "Normal"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/terapagosterastal.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/terapagosterastal.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/terapagos.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       },
@@ -27761,8 +27761,8 @@ const MergedPokemonData = {
         "types": [
           "Normal"
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/ani/terapagosstellar.gif",
-        "cry": "https://play.pokemonshowdown.com/audio/cries/terapagosstellar.mp3",
+        "sprite": "https://play.pokemonshowdown.com/sprites/gen5/.png",
+        "cry": "https://play.pokemonshowdown.com/audio/cries/terapagos.mp3",
         "tier": "Variant",
         "isSeparateEntry": false
       }
