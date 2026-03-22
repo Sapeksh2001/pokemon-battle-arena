@@ -596,7 +596,7 @@ export class PokemonBattleArena {
         this.audio.play('heal');
         const reviveHP = Math.floor(pokemon.maxHp / 2) || 1;
         this._notify(`${player.name} used a Revive!`, 'system');
-        this._applyHPChange(pokemon, playerId, reviveHP, 'revived');
+        this._applyHPChange(pokemon, pid, reviveHP, 'revived');
         if (this.multiplayer?.mode === 'playing') this.multiplayer.sendGameState();
     }
 

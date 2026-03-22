@@ -91,14 +91,14 @@ export class Pokemon {
         
         const oldMaxHp = this.maxHp;
         const newMaxHp = newData.stats.hp;
-        const diff = newMaxHp - oldMaxHp;
+        const hpFraction = this.currentHP / oldMaxHp;
         
         // Form nodes in the dataset use lowercase `name`; buildIndex normalises .Name = .name,
         // but be defensive here in case the raw node is passed directly.
         this.baseName = newBaseData.Name || newBaseData.name;
         this.fullName = newData.Name || newData.name;
         this.maxHp = newMaxHp;
-        this.currentHP = Math.min(newMaxHp, Math.max(1, this.currentHP + diff));
+        this.currentHP = Math.max(1, Math.round(newMaxHp * hpFraction));
         
         this.stats = { ...newData.stats };
         this.types = newData.types.flatMap(t => t.split(' '));

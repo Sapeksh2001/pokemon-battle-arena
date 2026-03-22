@@ -90,3 +90,10 @@ Existing Pokémon battle simulators are often feature-heavy, requiring account c
 - **Performance**: DOM updates batched using `requestAnimationFrame` where possible.
 - **Security**: Prevent XSS by escaping player names in the Battle Log.
 - **Accessibility**: 16:9 fixed ratio scaled via `vmin` to remain wholly visible on any monitor, high contrast pixel fonts.
+
+## 12. Future Scope
+- **Advanced Combat Mechanics**: Implementation of Held Items (e.g., Choice Band, Leftovers) and Abilities with mid-turn triggers.
+- **Status & Field Hazards**: Integrating Stealth Rock, Spikes, and lingering field effects (Terrain) to deepen competitive viability.
+- **Matchmaking & Accounts**: Optional Firebase Auth integration to store player Elo ratings, win/loss records, and saved custom teams across sessions.
+- **VFX & Animations**: Transitioning from CSS DOM transforms to Canvas/WebGL-based particle effects for distinct move types (e.g., Fire Blast, Hydro Pump).
+- **Spectator Mode**: Allowing non-combatants to join a room code simply to watch the battle sync in real-time.
